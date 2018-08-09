@@ -3,3 +3,37 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* buttons */
+.btn {
+  @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-purple text-white;
+}
+.btn:hover {
+  @apply shadow-lg;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+}
+/* Nav */
+.nav {
+  @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-purple;
+}
+.nav-brand {
+  @apply flex items-center flex-no-shrink text-purple mr-6;
+}
+.nav-btn {
+  @apply block text-purple;
+}
+.nav-menu {
+  @apply hidden w-full text-purple;
+}
+@screen sm {}
+@screen md {}
+
+@screen lg {
+  .nav-btn {
+    @apply hidden;
+  }
+  .nav-menu {
+    @apply block flex justify-between items-center w-auto flex-grow;
+  }
+}

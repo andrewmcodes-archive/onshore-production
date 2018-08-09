@@ -17,6 +17,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="./dist/images/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+  <script src="./dist/js/scroll-offset.js"></script>
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -34,7 +35,43 @@
     ga('send', 'pageview');
   </script>
   </head>
-  <body>
+  <body onload="load()">
+     <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-purple">
+    <div class="flex items-center flex-no-shrink text-purple mr-6">
+      <a rel="noopener" data-scroll href="#home" class=" no-underline text-purple font-semibold text-xl">Onshore Studios</a>
+    </div>
+    <div class="block text-purple lg:hidden">
+      <button class="flex items-center px-3 py-2 rounded text-white bg-purple hover:shadow-lg" id="js-nav-menu-button">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden w-full lg:block lg:flex lg:items-center lg:w-auto text-purple" id="js-nav-menu">
+      <div class="flex items-center justify-center">
+        <div class="text-sm lg:flex-grow text-center">
+          <a rel="noopener" data-scroll href="#home" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+            Home
+          </a>
+          <a rel="noopener" data-scroll href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+            About
+          </a>
+          <a rel="noopener" data-scroll href="#services" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+            Services
+          </a>
+          <a rel="noopener" data-scroll href="#testimonials" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+            Testimonials
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center justify-center lg:content-end text-center">
+        <a rel="noopener" data-scroll href="#contact" class="btn mt-4 lg:mt-0">Contact</a>
+      </div>
+    </div>
+  </nav>
+    <div class="js-menu-dismiss z-10">
+
     <section id="home"></section>
       <div class="min-h-screen flex items-center justify-center">
         <h1 class="text-5xl text-purple font-sans">Home</h1>
@@ -58,6 +95,8 @@
       <div class="min-h-screen flex items-center justify-center">
         <h1 class="text-5xl text-purple font-sans">Contact</h1>
       </div>
-    </section>=
+    </section>
+    </div>
+    <script src="./dist/js/nav.js"></script>
   </body>
 </html>
