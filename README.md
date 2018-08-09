@@ -1,3 +1,2 @@
-# onshore-2 # onshore-2
-# onshore-2 # onshore-2
-# onshore-2
+# README
+This is the official site for Onshore Studios
