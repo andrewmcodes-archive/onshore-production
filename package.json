@@ -11,9 +11,13 @@
         "extract-text-webpack-plugin": "next",
         "postcss": "^6.0.14",
         "postcss-loader": "^2.0.8",
+        "purgecss-webpack-plugin": "^1.2.0",
         "style-loader": "^0.20.3",
         "tailwindcss": "^0.6.4",
         "webpack": "^4.1.1",
-        "webpack-cli": "^2.0.12"
+        "webpack-cli": "^2.1.5"
+    },
+    "dependencies": {
+        "glob": "^7.1.2"
     }
 }
