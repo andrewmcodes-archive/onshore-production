@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="robots" content="all,follow">
   <link rel="stylesheet" href="./dist/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="apple-touch-icon" sizes="180x180" href="./dist/images/favicon/apple-touch-icon.png">
@@ -72,16 +72,22 @@
       </div>
     </div>
   </nav>
-  <div class="js-menu-dismiss z-10">
+  <div class="js-menu-dismiss z-10 bg-grey-lightest">
     <section id="home" class="section-container h-screen gradient text-white">
-      <h1 class="section-header">Onshore Studios</h1>
+      <div class="header-container">
+        <h1 class="home-header">Onshore</h1>
+      <h1 class="home-header">Studios</h1>
+      </div>
+      <div class="flex-container w-screen h-full opacity-25 absolute z-0">
+      <img src="./dist/images/onshore-logo.svg" width="640px" alt="" class="logo">
+      </div>
     </section>
     <section id="about" class="section-container">
       <div class="flex-container">
         <h1 class="section-header text-primary">About</h1>
         <h2 class="section-subtitle text-primary">We have one goal, provide value to our clients through elegant design, seamless functionality, and enhanced content delivery.</h2>
         <p class="section-content">We are Onshore Studios. We offer a variety of services, focused on increasing conversion through digital mediums. We specialize in responsive, SEO friendly websites, and have experience with a variety of programming languages, frameworks, and technologies. Our other areas of expertise are graphic design, branding, and consulting.</p>
-        <button class="btn">Have a project?</button>
+        <button class="btn">Let us help</button>
       </div>
       <div class="image-container bg-grey-lightest">
         <img class="px-8" src="./dist/images/iPad.svg" width="563px" alt="">
@@ -132,21 +138,19 @@
       </div>
     </section>
     <section id="testimonials" class="bg-grey-lightest section-container-alternate text-primary">
-      <div class="container">
-        <h1 class="section-header">Testimonials</h1>
-        <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
-      </div>
       <div class="flex-container carousel-container">
         <div class="carousel">
-          <p class="carousel-text">"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi
-            erat porttitor ligula, eget lacinia odio sem nec elit"</p>
+          <div class="circle">
+          <img src="./dist/images/profile-picture.jpg" alt="Ann Stapleton Profile Image" height="64px">
+          </div>
+          <p class="carousel-text">"It's so fun to see UNCW students succeed! Andrew's design professor referred him to me and he constructed my original web site during his first design class. I am really pleased with the work Andrew and Ethan have done for me for the new page design, it's inspiring to see how they have developed their business. They are an excellent team to work with, with great customer service and terrific ideas. "</p>
           <p class="carousel-author">
-            Andrew Mason
+            Dr. Ann E. Stapleton  //  Professor at the University of North Carolina - Wilmington
           </p>
         </div>
       </div>
     </section>
-    <section id="contact" class="section-container bg-primary">
+    <section id="contact" class="section-container bg-grey-lightest mb-8">
       <div class="social-container bg-primary">
         <div class="card">
           <h1 class="card-header">Onshore Studios</h1>
@@ -174,7 +178,7 @@
       </div>
       <div class="contact-container bg-white text-primary">
         <h1 class="section-header">Contact Us</h1>
-        <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris.</h2>
+        <h2 class="section-subtitle">We're ready to help you increase the value of your business</h2>
         <form method="POST" netlify>
           <div class="form-block">
             <label class="form-label" for="name">Name</label>
