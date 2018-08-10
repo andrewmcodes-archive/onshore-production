@@ -4621,6 +4621,12 @@ table {
   transition-duration: 200ms;
 }
 
+#contact .btn {
+  width: 100%;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
 /* Font */
 
 .font-primary {
@@ -4732,14 +4738,27 @@ table {
   font-weight: 700;
 }
 
+.home-header {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
 .section-subtitle {
-  text-align: center;
+  text-align: left;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 700;
+}
+
+#contact .section-subtitle {
+  text-align: center;
+}
+
+#services .section-subtitle {
+  text-align: center;
 }
 
 .section-content {
@@ -4753,26 +4772,37 @@ table {
 /* Carousel */
 
 .carousel {
-  width: 75%;
-  border-radius: .25rem;
-  background-color: #2948ff;
-  color: #fff;
+  width: 100%;
+  text-align: center;
+  color: #2948ff;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
 }
 
 .carousel-text {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: .875rem;
   line-height: 1.5;
 }
 
 .carousel-author {
   font-weight: 700;
-  font-size: .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.circle {
+  height: 6rem;
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  background-color: #f8fafc;
+  border-radius: 9999px;
+  display: block;
+  overflow: hidden;
 }
 
 /* Form */
@@ -4819,6 +4849,7 @@ form {
   overflow: hidden;
   padding: 2rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .card-header {
@@ -4891,7 +4922,7 @@ form {
 
 .service-header {
   font-size: 1.125rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   color: #2948ff;
 }
 
@@ -4901,13 +4932,20 @@ form {
   color: #2948ff;
 }
 
+.service-content {
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+
 /* Containers */
 
 footer {
-  background-color: #f8fafc;
+  background-color: #2948ff;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+  font-size: .875rem;
+  color: #fff;
 }
 
 .contact-container {
@@ -4918,6 +4956,9 @@ footer {
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
 }
 
 .flex-container {
@@ -4962,7 +5003,18 @@ footer {
   padding-bottom: 1rem;
 }
 
+.header-container {
+  position: relative;
+  z-index: 10;
+}
+
+/* Misc */
+
 @media (min-width: 768px) {
+  .home-header {
+    margin-right: 2rem;
+  }
+
   .section-header {
     text-align: center;
     width: 100%;
@@ -4991,12 +5043,17 @@ footer {
   }
 
   .carousel {
-    width: 50%;
+    width: 75%;
+  }
+
+  .carousel-text {
+    font-size: 1rem;
   }
 
   .card {
     width: 50%;
     margin-bottom: 2rem;
+    margin-top: 0;
   }
 
   .flex-container {
@@ -5014,7 +5071,7 @@ footer {
   }
 
   .social-container {
-    padding-top: .5rem;
+    padding-top: 2rem;
     padding-bottom: .5rem;
     width: 50%;
   }
@@ -5035,6 +5092,8 @@ footer {
 
   .contact-container {
     width: 50%;
+    margin-top: -1rem;
+    margin-right: 1rem;
   }
 
   .nav-link {
