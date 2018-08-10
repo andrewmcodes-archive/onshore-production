@@ -4559,6 +4559,8 @@ button,
   transition-duration: 200ms;
 }
 
+/* Font */
+
 .font-primary {
   font-family: 'Karla', sans-serif;
 }
@@ -4599,9 +4601,9 @@ button,
   color: #9561e2;
 }
 
+/* Section */
+
 .section-container {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4612,16 +4614,6 @@ button,
   margin-bottom: 1rem;
   font-size: 2.25rem;
   text-align: center;
-}
-
-.header-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .section-subtitle {
@@ -4638,6 +4630,8 @@ button,
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+/* Carousel */
 
 .carousel {
   width: 75%;
@@ -4661,25 +4655,7 @@ button,
   font-size: .75rem;
 }
 
-.flex-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.service-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+/* Form */
 
 form {
   width: 100%;
@@ -4693,7 +4669,6 @@ form {
   display: block;
   color: #9561e2;
   margin-bottom: .5rem;
-  /* @apply block text-sm text-grey mb-2 pr-4; */
 }
 
 .form-input {
@@ -4709,6 +4684,8 @@ form {
   color: #606f7b;
   line-height: 1.25;
 }
+
+/* Card */
 
 .card {
   background-color: #fff;
@@ -4751,6 +4728,8 @@ form {
   padding-right: 1rem;
 }
 
+/* Icon */
+
 .icon {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -4761,6 +4740,18 @@ form {
   color: #fff;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Service */
+
+.service-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .service {
@@ -4790,13 +4781,39 @@ form {
   color: #9561e2;
 }
 
+/* ?? */
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   .section-container {
     flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .section-container-alternate {
     flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .service-container {
