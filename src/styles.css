@@ -26,7 +26,7 @@ background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, F
 }
 /* buttons */
 .btn {
-  @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-primary text-white;
+  @apply no-underline text-sm font-semibold rounded px-6 py-2 leading-normal bg-primary text-white;
 }
 .btn:hover {
   @apply shadow-lg;
@@ -61,7 +61,7 @@ background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, F
   @apply mb-4 text-4xl font-bold;
 }
 .section-subtitle {
-  @apply mb-6 px-4 text-base leading-normal font-bold;
+  @apply text-center mb-6 px-4 text-base leading-normal font-bold;
 }
 .section-content {
   @apply px-4 pb-8 leading-normal;
@@ -85,7 +85,7 @@ form {
 }
 
 .form-label {
-  @apply block text-primary mb-2;
+  @apply text-left block text-primary mb-2;
 }
 
 .form-input {
@@ -133,7 +133,7 @@ form {
   @apply w-full flex flex-col items-center justify-center pt-8;
 }
 .contact-container {
-  @apply w-full flex flex-col items-center justify-center pt-8;
+  @apply w-full flex flex-col text-center items-center justify-center pt-8;
 }
 .flex-container {
   @apply w-full flex flex-col items-center justify-center py-4;
@@ -179,13 +179,13 @@ form {
     @apply pt-2 pb-8 ml-4 w-1/2;
   }
   .social-container {
-    @apply pt-2 pb-8 ml-4 w-1/2;
+    @apply pt-2 pb-2 w-1/2;
   }
   .carousel-container {
     @apply pt-2 pb-8 ml-4;
   }
   .image-container {
-    @apply pt-2 pb-8 pl-8 w-1/2;
+    @apply pt-8 pb-8 pl-8 w-1/2;
   }
   .contact-container {
     @apply w-1/2;

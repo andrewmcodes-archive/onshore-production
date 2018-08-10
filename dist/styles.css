@@ -4570,11 +4570,11 @@ button,
 
 .btn {
   text-decoration: none;
-  font-size: .75rem;
+  font-size: .875rem;
   font-weight: 600;
   border-radius: .25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
   line-height: 1.5;
@@ -4647,6 +4647,7 @@ button,
 }
 
 .section-subtitle {
+  text-align: center;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -4698,6 +4699,7 @@ form {
 }
 
 .form-label {
+  text-align: left;
   display: block;
   color: #2948ff;
   margin-bottom: .5rem;
@@ -4830,6 +4832,7 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
@@ -4938,8 +4941,7 @@ form {
 
   .social-container {
     padding-top: .5rem;
-    padding-bottom: 2rem;
-    margin-left: 1rem;
+    padding-bottom: .5rem;
     width: 50%;
   }
 
@@ -4950,7 +4952,7 @@ form {
   }
 
   .image-container {
-    padding-top: .5rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     width: 50%;
