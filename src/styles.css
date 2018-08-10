@@ -5,9 +5,28 @@
 :root {
 font-size: 16px;
 }
+.bg-primary {
+  background-color: #2948ff;
+}
+.text-primary {
+  color: #2948ff;
+}
+.border-primary {
+  border-color: #2948ff;
+}
+.gradient {
+  background: #396afc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.overlay {
+  @apply h-full w-full z-0;
+  background-color: rgba(10,10,10,0.7);
+}
 /* buttons */
 .btn {
-  @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-purple text-white;
+  @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-primary text-white;
 }
 .btn:hover {
   @apply shadow-lg;
@@ -20,36 +39,36 @@ font-size: 16px;
 }
 /* Nav */
 .nav {
-  @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-purple;
+  @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-primary;
 }
 
 .nav-brand {
-  @apply flex items-center flex-no-shrink text-purple mr-6;
+  @apply flex items-center flex-no-shrink text-primary mr-6;
 }
 
 .nav-btn {
-  @apply block text-purple;
+  @apply block text-primary;
 }
 
 .nav-menu {
-  @apply hidden w-full text-purple;
+  @apply hidden w-full text-primary;
 }
 /* Section */
 .section-container {
-  @apply flex flex-col items-center justify-center;
+  @apply text-center flex flex-col items-center justify-center;
 }
 .section-header {
-  @apply mb-4 text-4xl text-center font-bold;
+  @apply mb-4 text-4xl font-bold;
 }
 .section-subtitle {
-  @apply mb-6 px-4 text-base text-center leading-normal font-bold;
+  @apply mb-6 px-4 text-base leading-normal font-bold;
 }
 .section-content {
-  @apply text-center px-4 pb-8 leading-normal;
+  @apply px-4 pb-8 leading-normal;
 }
 /* Carousel */
 .carousel {
-  @apply w-3/4 rounded bg-purple text-white px-4 py-6 shadow-lg;
+  @apply w-3/4 rounded bg-primary text-white px-4 py-6 shadow-lg;
 }
 .carousel-text {
   @apply mb-4 text-sm leading-normal;
@@ -66,7 +85,7 @@ form {
 }
 
 .form-label {
-  @apply block text-purple mb-2;
+  @apply block text-primary mb-2;
 }
 
 .form-input {
@@ -77,14 +96,14 @@ form {
   @apply w-3/4 bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden p-8 mb-4;
 }
 .card-header {
-  @apply text-lg leading-tight mb-6 text-purple;
+  @apply text-lg leading-tight mb-6 text-primary;
 }
 .card-subtitle {
-  @apply text-base leading-tight text-purple mb-2;
+  @apply text-base leading-tight text-primary mb-2;
 }
 .card-content {}
 .card-link {
-  @apply no-underline block pb-6 text-purple text-sm;
+  @apply no-underline block pb-6 text-primary text-sm;
 }
 .contact-card-icon {
   @apply pr-4;
@@ -104,21 +123,36 @@ form {
   @apply w-3/4 mx-4 bg-white shadow-lg rounded flex flex-col px-4 py-4 mb-4 text-center;
 }
 .service-header {
-  @apply text-lg mb-2 text-purple;
+  @apply text-lg mb-2 text-primary;
 }
 .service-icon {
-  @apply mb-4 text-3xl text-purple;
+  @apply mb-4 text-3xl text-primary;
 }
 /* ?? */
 .header-container {
   @apply w-full flex flex-col items-center justify-center pt-8;
 }
+.contact-container {
+  @apply w-full flex flex-col items-center justify-center pt-8;
+}
 .flex-container {
+  @apply w-full flex flex-col items-center justify-center py-4;
+}
+.about-container {
+  @apply w-full flex flex-col items-center justify-center py-4 text-center;
+}
+.carousel-container {
+  @apply w-full flex flex-col items-center justify-center py-4;
+}
+.social-container {
+  @apply w-full flex flex-col items-center justify-center py-4;
+}
+.image-container {
   @apply w-full flex flex-col items-center justify-center py-4;
 }
 @screen md {
   .section-container {
-    @apply flex-row;
+    @apply flex-row text-left;
   }
   .section-container-alternate {
     @apply flex-col py-4;
@@ -139,7 +173,22 @@ form {
     @apply w-3/4;
   }
   .flex-container {
-    @apply pt-2 pb-8;
+    @apply pt-2 pb-8 ml-4 w-1/3;
+  }
+  .about-container {
+    @apply pt-2 pb-8 ml-4 w-1/2;
+  }
+  .social-container {
+    @apply pt-2 pb-8 ml-4 w-1/2;
+  }
+  .carousel-container {
+    @apply pt-2 pb-8 ml-4;
+  }
+  .image-container {
+    @apply pt-2 pb-8 pl-8 w-1/2;
+  }
+  .contact-container {
+    @apply w-1/2;
   }
 }
 

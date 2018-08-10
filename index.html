@@ -38,56 +38,56 @@
   </script>
 </head>
 <body onload="load()" class="font-primary">
-  <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-purple">
-    <div class="flex items-center flex-no-shrink text-purple mr-6">
-      <a rel="noopener" data-scroll href="#home" class=" no-underline text-purple font-semibold text-xl">Onshore Studios</a>
+  <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-primary">
+    <div class="flex items-center flex-no-shrink text-primary mr-6">
+      <a rel="noopener" data-scroll href="#home" class=" no-underline text-primary font-semibold text-xl">Onshore Studios</a>
     </div>
-    <div class="block text-purple lg:hidden">
-      <button class="flex items-center px-3 py-2 rounded text-white bg-purple hover:shadow-lg" id="js-nav-menu-button">
+    <div class="block text-primary lg:hidden">
+      <button class="flex items-center px-3 py-2 rounded text-white bg-primary hover:shadow-lg" id="js-nav-menu-button">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </button>
     </div>
-    <div class="hidden w-full lg:block lg:flex lg:items-center lg:w-auto text-purple" id="js-nav-menu">
+    <div class="hidden w-full lg:block lg:flex lg:items-center lg:w-auto text-primary" id="js-nav-menu">
       <div class="flex items-center justify-center">
         <div class="text-sm lg:flex-grow text-center">
-          <a rel="noopener" data-scroll href="#home" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+          <a rel="noopener" data-scroll href="#home" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
             Home
           </a>
-          <a rel="noopener" data-scroll href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+          <a rel="noopener" data-scroll href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
             About
           </a>
-          <a rel="noopener" data-scroll href="#services" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+          <a rel="noopener" data-scroll href="#services" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
             Services
           </a>
-          <a rel="noopener" data-scroll href="#testimonials" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-purple md:mr-8 font-semibold border-b-2 border-white lg:hover:border-purple underline-transition nav-link">
+          <a rel="noopener" data-scroll href="#testimonials" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
             Testimonials
           </a>
         </div>
       </div>
       <div class="flex items-center justify-center lg:content-end text-center">
-        <a rel="noopener" data-scroll href="#contact" class="btn mt-4 lg:mt-0">Contact</a>
+        <a rel="noopener" data-scroll href="#contact" class="btn mt-4 lg:mt-0 mr-4">Contact</a>
       </div>
     </div>
   </nav>
   <div class="js-menu-dismiss z-10">
-    <section id="home" class="section-container h-screen bg-purple text-white">
+    <section id="home" class="section-container h-screen gradient text-white">
       <h1 class="section-header">Home</h1>
     </section>
     <section id="about" class="section-container py-4">
-      <div class="flex-container">
-        <h1 class="section-header text-purple">About</h1>
-        <h2 class="section-subtitle text-purple">We have one goal, provide value to our clients through elegant design, seamless functionality, and enhanced content delivery.</h2>
+      <div class="about-container">
+        <h1 class="section-header text-primary">About</h1>
+        <h2 class="section-subtitle text-primary">We have one goal, provide value to our clients through elegant design, seamless functionality, and enhanced content delivery.</h2>
         <p class="section-content">We are Onshore Studios. We offer a variety of services, focused on increasing conversion through digital mediums. We specialize in responsive, SEO friendly websites, and have experience with a variety of programming languages, frameworks, and technologies. Our other areas of expertise are graphic design, branding, and consulting.</p>
         <button class="btn">Have a project?</button>
       </div>
-      <div class="flex-container">
+      <div class="image-container">
         <img class="px-8" src="./dist/images/iPad.svg" width="563px" alt="">
       </div>
     </section>
-    <section id="services" class="section-container-alternate bg-purple">
+    <section id="services" class="section-container-alternate bg-primary">
       <div class="header-container">
         <h1 class="section-header text-white">Services</h1>
         <h2 class="section-subtitle text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
@@ -131,12 +131,12 @@
         </div>
       </div>
     </section>
-    <section id="testimonials" class="section-container-alternate text-center text-purple">
+    <section id="testimonials" class="section-container-alternate text-center text-primary">
       <div class="header-container">
         <h1 class="section-header">Testimonials</h1>
         <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
       </div>
-      <div class="flex-container">
+      <div class="carousel-container">
         <div class="carousel">
           <p class="carousel-text">"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi
             erat porttitor ligula, eget lacinia odio sem nec elit"</p>
@@ -146,8 +146,8 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="section-container bg-purple">
-      <div class="flex-container bg-purple">
+    <section id="contact" class="section-container bg-primary">
+      <div class="social-container bg-primary">
         <div class="card">
           <h1 class="card-header">Onshore Studios</h1>
           <div class="card-content">
@@ -172,7 +172,7 @@
           <i class="icon fab fa-dribbble"></i>
         </div>
       </div>
-      <div class="header-container bg-white text-purple">
+      <div class="contact-container bg-white text-primary">
         <h1 class="section-header">Contact Us</h1>
         <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris.</h2>
         <form action="" class="w-3/4">
