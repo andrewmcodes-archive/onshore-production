@@ -519,6 +519,16 @@ ul {
 }
 
 /**
+ * Suppress the focus outline on elements that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ */
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+/**
  * Tailwind custom reset styles
  */
 
@@ -579,7 +589,6 @@ textarea {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 button,
@@ -599,10 +608,6 @@ textarea::placeholder {
 button,
 [role=button] {
   cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
 }
 
 .container {
@@ -1300,14 +1305,6 @@ table {
 
 .bg-contain {
   background-size: contain;
-}
-
-.border-collapse {
-  border-collapse: collapse;
-}
-
-.border-separate {
-  border-collapse: separate;
 }
 
 .border-transparent {
@@ -3194,14 +3191,6 @@ table {
   opacity: 1;
 }
 
-.outline-none {
-  outline: 0;
-}
-
-.focus\:outline-none:focus {
-  outline: 0;
-}
-
 .overflow-auto {
   overflow: auto;
 }
@@ -3224,22 +3213,6 @@ table {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
-.overflow-x-visible {
-  overflow-x: visible;
-}
-
-.overflow-y-visible {
-  overflow-y: visible;
 }
 
 .overflow-x-scroll {
@@ -3608,14 +3581,6 @@ table {
 
 .stroke-current {
   stroke: currentColor;
-}
-
-.table-auto {
-  table-layout: auto;
-}
-
-.table-fixed {
-  table-layout: fixed;
 }
 
 .text-left {
@@ -4594,6 +4559,10 @@ table {
   transition-duration: 200ms;
 }
 
+.font-primary {
+  font-family: 'Karla', sans-serif;
+}
+
 /* Nav */
 
 .nav {
@@ -4605,7 +4574,6 @@ table {
   background-color: #fff;
   padding: 1.5rem;
   z-index: 10;
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   position: fixed;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
   border-top-width: 4px;
@@ -4631,10 +4599,234 @@ table {
   color: #9561e2;
 }
 
-@media (min-width: 576px) {
+.section-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-subtitle {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.section-content {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.carousel {
+  width: 75%;
+  background-color: #9561e2;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+}
+
+.carousel-text {
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.carousel-author {
+  font-weight: 700;
+  font-size: .75rem;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.service-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+form {
+  width: 100%;
+}
+
+.form-block {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  color: #9561e2;
+  margin-bottom: .5rem;
+  /* @apply block text-sm text-grey mb-2 pr-4; */
+}
+
+.form-input {
+  background-color: #f1f5f8;
+  border-width: 2px;
+  border-color: #f1f5f8;
+  border-radius: .25rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #606f7b;
+  line-height: 1.25;
+}
+
+.card {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30rem;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  border-radius: .5rem;
+  overflow: hidden;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  color: #9561e2;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #9561e2;
+  margin-bottom: .5rem;
+}
+
+.card-content {
+}
+
+.card-link {
+  text-decoration: none;
+  display: block;
+  padding-bottom: 1.5rem;
+  color: #9561e2;
+  font-size: .875rem;
+}
+
+.contact-card-icon {
+  padding-right: 1rem;
+}
+
+.icon {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.icon-container {
+  font-size: 1.875rem;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service {
+  width: 75%;
+  background-color: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  border-radius: .25rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-header {
+  font-size: 1.125rem;
+  margin-bottom: .5rem;
+  color: #9561e2;
+}
+
+.service-icon {
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  color: #9561e2;
 }
 
 @media (min-width: 768px) {
+  .section-container {
+    flex-direction: row;
+  }
+
+  .section-container-alternate {
+    flex-direction: column;
+  }
+
+  .service-container {
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .service {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .carousel {
+    width: 50%;
+  }
+
+  .card {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 75%;
+  }
+
+  .flex-container {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -7230,22 +7422,6 @@ table {
     overflow-y: auto;
   }
 
-  .sm\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .sm\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .sm\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .sm\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .sm\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -7604,14 +7780,6 @@ table {
 
   .sm\:shadow-none {
     box-shadow: none;
-  }
-
-  .sm\:table-auto {
-    table-layout: auto;
-  }
-
-  .sm\:table-fixed {
-    table-layout: fixed;
   }
 
   .sm\:text-left {
@@ -11147,22 +11315,6 @@ table {
     overflow-y: auto;
   }
 
-  .md\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .md\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .md\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .md\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .md\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -11521,14 +11673,6 @@ table {
 
   .md\:shadow-none {
     box-shadow: none;
-  }
-
-  .md\:table-auto {
-    table-layout: auto;
-  }
-
-  .md\:table-fixed {
-    table-layout: fixed;
   }
 
   .md\:text-left {
@@ -15064,22 +15208,6 @@ table {
     overflow-y: auto;
   }
 
-  .lg\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .lg\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .lg\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .lg\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .lg\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -15438,14 +15566,6 @@ table {
 
   .lg\:shadow-none {
     box-shadow: none;
-  }
-
-  .lg\:table-auto {
-    table-layout: auto;
-  }
-
-  .lg\:table-fixed {
-    table-layout: fixed;
   }
 
   .lg\:text-left {
@@ -18981,22 +19101,6 @@ table {
     overflow-y: auto;
   }
 
-  .xl\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .xl\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .xl\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .xl\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .xl\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -19355,14 +19459,6 @@ table {
 
   .xl\:shadow-none {
     box-shadow: none;
-  }
-
-  .xl\:table-auto {
-    table-layout: auto;
-  }
-
-  .xl\:table-fixed {
-    table-layout: fixed;
   }
 
   .xl\:text-left {

@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="robots" content="all,follow">
   <link rel="stylesheet" href="./dist/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
   <link rel="apple-touch-icon" sizes="180x180" href="./dist/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./dist/images/favicon/favicon-16x16.png">
@@ -34,9 +37,10 @@
     ga('create', 'UA-99046738-1', 'auto');
     ga('send', 'pageview');
   </script>
-  </head>
-  <body onload="load()">
-     <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-purple">
+</head>
+
+<body onload="load()" class="font-primary">
+  <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-purple">
     <div class="flex items-center flex-no-shrink text-purple mr-6">
       <a rel="noopener" data-scroll href="#home" class=" no-underline text-purple font-semibold text-xl">Onshore Studios</a>
     </div>
@@ -70,33 +74,147 @@
       </div>
     </div>
   </nav>
-    <div class="js-menu-dismiss z-10">
+  <div class="js-menu-dismiss z-10">
 
-    <section id="home"></section>
-      <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-5xl text-purple font-sans">Home</h1>
+    <section id="home">
+      <div class="section-container">
+        <h1 class="section-header">Home</h1>
       </div>
+    </section>
     <section id="about">
-      <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-5xl text-purple font-sans">About</h1>
+      <div class="section-container">
+        <div class="flex-container">
+          <h1 class="section-header">About</h1>
+          <h2 class="section-subtitle">We have one goal, provide value to our clients through the magic of elegant design, seamless functionality, and
+            flawless content delivery.</h2>
+          <p class="section-content">We are Onshore Studios. We offer a variety of services, focused on increasing conversion through digital mediums.
+            We specialize in responsive, SEO friendly websites, and have experience with a variety of programming languages,
+            frameworks, and technologies. Our other areas of expertise are graphic design, branding, and consulting. </p>
+          <br>
+          <p class="section-content">If you are looking to increase the value of your online presence, you are in the right place.</p>
+        </div>
+        <div class="flex-container">
+          <img class="px-8" src="./dist/images/iPad.svg" alt="">
+        </div>
       </div>
     </section>
     <section id="services">
-      <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-5xl text-purple font-sans">Services</h1>
+      <div class="section-container-alternate bg-purple">
+        <div class="header-container">
+          <h1 class="section-header text-white">Services</h1>
+          <h2 class="section-subtitle text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
+        </div>
+        <div class="service-container">
+          <div class="service">
+            <i class="service-icon fas fa-bolt"></i>
+            <h1 class="service-header">
+              Performance
+            </h1>
+            <p class="service-content">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
+            </p>
+          </div>
+          <div class="service">
+            <i class="service-icon fas fa-universal-access"></i>
+            <h1 class="service-header">
+              Accessibility
+            </h1>
+            <p class="service-content">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
+            </p>
+          </div>
+          <div class="service">
+            <i class="service-icon fas fa-code"></i>
+            <h1 class="service-header">
+              Best Practices
+            </h1>
+            <p class="service-content">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
+            </p>
+          </div>
+          <div class="service">
+            <i class="service-icon fas fa-chart-line"></i>
+            <h1 class="service-header">
+              SEO
+            </h1>
+            <p class="service-content">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="testimonials">
-      <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-5xl text-purple font-sans">Testimonials</h1>
+      <div class="section-container-alternate text-center text-purple">
+        <div class="flex-container">
+          <h1 class="section-header">Testimonials</h1>
+          <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
+        </div>
+        <div class="flex-container">
+          <div class="carousel">
+            <p class="carousel-text">"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi
+              erat porttitor ligula, eget lacinia odio sem nec elit"</p>
+            <p class="carousel-author">
+              Andrew Mason
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="contact">
-      <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-5xl text-purple font-sans">Contact</h1>
+      <div class="section-container bg-purple">
+        <div class="flex-container bg-purple">
+          <div class="card">
+            <h1 class="card-header">Onshore Studios</h1>
+            <div class="card-content">
+              <h2 class="card-subtitle">
+                <i class="contact-card-icon fas fa-envelope"></i>Email</h2>
+              <a class="card-link" href="#email">onshorestudios@gmail.com</a>
+              <h2 class="card-subtitle">
+                <i class="contact-card-icon fas fa-home"></i>Website</h2>
+              <a class="card-link" href="onshorestudios.com">onshorestudios.com</a>
+            </div>
+          </div>
+          <div class="icon-container">
+            <i class="icon fab fa-instagram"></i>
+            <i class="icon fab fa-facebook"></i>
+            <i class="icon fab fa-linkedin"></i>
+            <i class="icon fab fa-twitter"></i>
+          </div>
+          <div class="icon-container">
+            <i class="icon fab fa-codepen"></i>
+            <i class="icon fab fa-google-plus-g"></i>
+            <i class="icon fab fa-github"></i>
+            <i class="icon fab fa-dribbble"></i>
+          </div>
+        </div>
+        <div class="flex-container bg-white text-purple">
+          <h1 class="section-header">Contact Us</h1>
+          <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
+          <form action="" class="">
+            <div class="form-block">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" id="name" type="text" placeholder="Jane Doe">
+            </div>
+            <div class="form-block">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" id="email" type="email" placeholder="hello@email.com">
+            </div>
+            <div class="form-block">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input" name="" id="message" cols="30" rows="10" placeholder="Enter Message..."></textarea>
+            </div>
+            <div class="form-block">
+              <button class="btn">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
-    </div>
-    <script src="./dist/js/nav.js"></script>
-  </body>
+  </div>
+  <script src="./dist/js/nav.js"></script>
+</body>
+
 </html>

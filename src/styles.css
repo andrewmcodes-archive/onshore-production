@@ -1,33 +1,161 @@
 @tailwind preflight;
-
 @tailwind components;
-
 @tailwind utilities;
-
 /* buttons */
+
 .btn {
   @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-purple text-white;
 }
+
 .btn:hover {
   @apply shadow-lg;
   transition-timing-function: linear;
   transition-duration: 200ms;
 }
-/* Nav */
-.nav {
-  @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-purple;
+
+.font-primary {
+  font-family: 'Karla', sans-serif;
 }
+
+/* Nav */
+
+.nav {
+  @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-purple;
+}
+
 .nav-brand {
   @apply flex items-center flex-no-shrink text-purple mr-6;
 }
+
 .nav-btn {
   @apply block text-purple;
 }
+
 .nav-menu {
   @apply hidden w-full text-purple;
 }
-@screen sm {}
-@screen md {}
+
+.section-container {
+  @apply py-4 flex flex-col items-center justify-center;
+}
+
+.section-header {
+  @apply mb-4 text-4xl text-center;
+}
+.header-container {
+  @apply w-full flex flex-col items-center justify-center py-8;
+}
+.section-subtitle {
+  @apply mb-6 px-4 text-base text-center leading-normal;
+}
+
+.section-content {
+  @apply text-center px-4;
+}
+
+.carousel {
+  @apply w-3/4 bg-purple text-white px-4 py-6 shadow-lg;
+}
+
+.carousel-text {
+  @apply mb-4 text-sm leading-normal;
+}
+
+.carousel-author {
+  @apply font-bold text-xs;
+}
+
+.flex-container {
+  @apply w-full flex flex-col items-center justify-center py-4;
+}
+
+.service-container {
+  @apply w-full flex flex-col items-center justify-center py-8;
+}
+form {
+  @apply w-full;
+}
+.form-block {
+  @apply mb-4;
+}
+
+.form-label {
+  @apply block text-purple mb-2;
+  /* @apply block text-sm text-grey mb-2 pr-4; */
+}
+
+.form-input {
+  @apply bg-grey-lighter border-2 border-grey-lighter rounded w-full py-4 px-4 text-grey-darker leading-tight;
+}
+
+.card {
+  @apply bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden p-8 mb-4;
+}
+
+.card-header {
+  @apply text-lg leading-tight mb-6 text-purple;
+}
+
+.card-subtitle {
+  @apply text-base leading-tight text-purple mb-2;
+}
+
+.card-content {}
+
+.card-link {
+  @apply no-underline block pb-6 text-purple text-sm;
+}
+
+.contact-card-icon {
+  @apply pr-4;
+}
+
+.icon {
+  @apply px-4;
+}
+
+.icon-container {
+  @apply text-3xl text-white my-4;
+}
+
+.service {
+  @apply w-3/4 bg-white shadow-lg rounded flex flex-col px-4 py-4 mb-4 text-center;
+}
+
+.service-header {
+  @apply text-lg mb-2 text-purple;
+}
+
+.service-icon {
+  @apply mb-4 text-3xl text-purple;
+}
+
+@screen md {
+  .section-container {
+    @apply flex-row;
+  }
+  .section-container-alternate {
+    @apply flex-col;
+  }
+  .service-container {
+    @apply flex-row px-4;
+  }
+  .service {
+    @apply mx-2;
+  }
+  .carousel {
+    @apply w-1/2;
+  }
+  .card {
+    @apply w-1/2 mb-8;
+  }
+  form {
+    @apply w-3/4;
+  }
+  .flex-container {
+    @apply py-2;
+  }
+}
 
 @screen lg {
   .nav-btn {
