@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+font-size: 16px;
+}
 /* buttons */
 .btn {
   @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-purple text-white;
@@ -36,17 +39,17 @@
   @apply flex flex-col items-center justify-center;
 }
 .section-header {
-  @apply mb-4 text-4xl text-center;
+  @apply mb-4 text-4xl text-center font-bold;
 }
 .section-subtitle {
-  @apply mb-6 px-4 text-base text-center leading-normal;
+  @apply mb-6 px-4 text-base text-center leading-normal font-bold;
 }
 .section-content {
-  @apply text-center px-4;
+  @apply text-center px-4 pb-8 leading-normal;
 }
 /* Carousel */
 .carousel {
-  @apply w-3/4 bg-purple text-white px-4 py-6 shadow-lg;
+  @apply w-3/4 rounded bg-purple text-white px-4 py-6 shadow-lg;
 }
 .carousel-text {
   @apply mb-4 text-sm leading-normal;
@@ -71,7 +74,7 @@ form {
 }
 /* Card */
 .card {
-  @apply bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden p-8 mb-4;
+  @apply w-3/4 bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden p-8 mb-4;
 }
 .card-header {
   @apply text-lg leading-tight mb-6 text-purple;
@@ -95,10 +98,10 @@ form {
 }
 /* Service */
 .service-container {
-  @apply w-full flex flex-col items-center justify-center py-8;
+  @apply w-full flex flex-col items-center justify-center pb-8;
 }
 .service {
-  @apply w-3/4 bg-white shadow-lg rounded flex flex-col px-4 py-4 mb-4 text-center;
+  @apply w-3/4 mx-4 bg-white shadow-lg rounded flex flex-col px-4 py-4 mb-4 text-center;
 }
 .service-header {
   @apply text-lg mb-2 text-purple;
@@ -108,14 +111,14 @@ form {
 }
 /* ?? */
 .header-container {
-  @apply w-full flex flex-col items-center justify-center py-8;
+  @apply w-full flex flex-col items-center justify-center pt-8;
 }
 .flex-container {
   @apply w-full flex flex-col items-center justify-center py-4;
 }
 @screen md {
   .section-container {
-    @apply flex-row py-4;
+    @apply flex-row;
   }
   .section-container-alternate {
     @apply flex-col py-4;
@@ -136,7 +139,7 @@ form {
     @apply w-3/4;
   }
   .flex-container {
-    @apply py-2;
+    @apply pt-2 pb-8;
   }
 }
 
