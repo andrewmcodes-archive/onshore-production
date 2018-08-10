@@ -5,6 +5,8 @@
   font-size: 16px;
 }
 
+/* Color */
+
 .bg-primary {
   background-color: #2948ff;
 }
@@ -24,11 +26,6 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2948ff, #396afc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.overlay {
-  @apply h-full w-full z-0;
-  background-color: rgba(10, 10, 10, 0.7);
 }
 
 /* buttons */
@@ -91,30 +88,6 @@
   @apply text-sm text-center;
 }
 
-@screen md {
-  .nav-link {
-    @apply mr-8;
-  }
-}
-
-@screen lg {
-  .nav-link {
-    @apply inline-block mt-0;
-  }
-  .nav-cta-container {
-    @apply content-end;
-  }
-  .nav-cta {
-    @apply mt-0;
-  }
-  .nav-content-container {
-    @apply block flex items-center w-auto;
-  }
-  .nav-link-container {
-    @apply flex-grow;
-  }
-}
-
 @variants hover {
   .nav-btn {
     @apply shadow-lg;
@@ -171,7 +144,6 @@ form {
   @apply bg-grey-lighter border-2 border-grey-lighter rounded w-full py-4 px-4 text-grey-darker leading-tight;
 }
 
-
 /* Card */
 
 .card {
@@ -186,14 +158,8 @@ form {
   @apply text-base leading-tight text-primary mb-2;
 }
 
-.card-content {}
-
 .card-link {
   @apply no-underline block pb-6 text-primary text-sm;
-}
-
-.contact-card-icon {
-  @apply pr-4;
 }
 
 /* Icon */
@@ -204,6 +170,10 @@ form {
 
 .icon-container {
   @apply text-3xl text-white my-4;
+}
+
+.contact-card-icon {
+  @apply pr-4;
 }
 
 /* Service */
@@ -224,9 +194,12 @@ form {
   @apply mb-4 text-3xl text-primary;
 }
 
+/* Containers */
+
 footer {
   @apply bg-grey-lightest py-8 text-center;
 }
+
 .contact-container {
   @apply w-full flex flex-col text-center items-center justify-center pt-8;
 }
@@ -287,8 +260,27 @@ footer {
   .contact-container {
     @apply w-1/2;
   }
+  .nav-link {
+    @apply mr-8;
+  }
 }
+
 @screen lg {
+  .nav-link {
+    @apply inline-block mt-0;
+  }
+  .nav-cta-container {
+    @apply content-end;
+  }
+  .nav-cta {
+    @apply mt-0;
+  }
+  .nav-content-container {
+    @apply block flex items-center w-auto;
+  }
+  .nav-link-container {
+    @apply flex-grow;
+  }
   .container {
     @apply mx-auto;
   }
