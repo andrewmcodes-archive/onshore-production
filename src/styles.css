@@ -156,7 +156,7 @@
 /* Form */
 
 form {
-  @apply w-full;
+  @apply w-3/4;
 }
 
 .form-block {
@@ -170,6 +170,7 @@ form {
 .form-input {
   @apply bg-grey-lighter border-2 border-grey-lighter rounded w-full py-4 px-4 text-grey-darker leading-tight;
 }
+
 
 /* Card */
 
@@ -221,10 +222,6 @@ form {
 
 .service-icon {
   @apply mb-4 text-3xl text-primary;
-}
-
-form {
-  @apply w-3/4;
 }
 
 footer {
@@ -289,5 +286,10 @@ footer {
   }
   .contact-container {
     @apply w-1/2;
+  }
+}
+@screen lg {
+  .container {
+    @apply mx-auto;
   }
 }

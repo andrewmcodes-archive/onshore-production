@@ -175,21 +175,21 @@
       <div class="contact-container bg-white text-primary">
         <h1 class="section-header">Contact Us</h1>
         <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris.</h2>
-        <form action="">
+        <form method="POST" netlify>
           <div class="form-block">
             <label class="form-label" for="name">Name</label>
-            <input class="form-input" id="name" type="text" placeholder="Jane Doe">
+            <input class="form-input" name="name" id="name" type="text" placeholder="Jane Doe">
           </div>
           <div class="form-block">
             <label class="form-label" for="email">Email</label>
-            <input class="form-input" id="email" type="email" placeholder="hello@email.com">
+            <input class="form-input" name="email" id="email" type="email" placeholder="hello@email.com">
           </div>
           <div class="form-block">
             <label class="form-label" for="message">Message</label>
-            <textarea class="form-input" name="" id="message" cols="30" rows="4" placeholder="Enter Message..."></textarea>
+            <textarea class="form-input" name="message" id="message" cols="30" rows="4" placeholder="Enter Message..."></textarea>
           </div>
           <div class="form-block">
-            <button class="btn">
+            <button type="submit" class="btn">
               Submit
             </button>
           </div>
