@@ -1,85 +1,164 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-font-size: 16px;
+  font-size: 16px;
 }
+
 .bg-primary {
   background-color: #2948ff;
 }
+
 .text-primary {
   color: #2948ff;
 }
+
 .border-primary {
   border-color: #2948ff;
 }
-.gradient {
-  background: #396afc;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+.gradient {
+  background: #396afc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2948ff, #396afc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .overlay {
   @apply h-full w-full z-0;
-  background-color: rgba(10,10,10,0.7);
+  background-color: rgba(10, 10, 10, 0.7);
 }
+
 /* buttons */
+
 .btn {
   @apply no-underline text-sm font-semibold rounded px-6 py-2 leading-normal bg-primary text-white;
 }
+
 .btn:hover {
   @apply shadow-lg;
   transition-timing-function: linear;
   transition-duration: 200ms;
 }
+
 /* Font */
+
 .font-primary {
   font-family: 'Karla', sans-serif;
 }
+
 /* Nav */
+
 .nav {
   @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-primary;
 }
 
-.nav-brand {
+.nav-brand-container {
   @apply flex items-center flex-no-shrink text-primary mr-6;
 }
 
-.nav-btn {
-  @apply block text-primary;
+.nav-brand {
+  @apply no-underline text-primary font-semibold text-xl;
 }
 
-.nav-menu {
-  @apply hidden w-full text-primary;
+.nav-btn {
+  @apply flex items-center px-3 py-2 rounded text-white bg-primary;
 }
+
+.hamburger-menu {
+  @apply fill-current h-3 w-3;
+}
+
+.nav-link {
+  @apply no-underline block mt-4 text-primary font-semibold
+}
+
+.nav-container {
+  @apply flex items-center justify-center text-center
+}
+
+.nav-content-container {
+  @apply w-full text-primary;
+}
+
+.nav-cta {
+  @apply mt-4;
+}
+
+.nav-link-container {
+  @apply text-sm text-center;
+}
+
+@screen md {
+  .nav-link {
+    @apply mr-8;
+  }
+}
+
+@screen lg {
+  .nav-link {
+    @apply inline-block mt-0;
+  }
+  .nav-cta-container {
+    @apply content-end;
+  }
+  .nav-cta {
+    @apply mt-0;
+  }
+  .nav-content-container {
+    @apply block flex items-center w-auto;
+  }
+  .nav-link-container {
+    @apply flex-grow;
+  }
+}
+
+@variants hover {
+  .nav-btn {
+    @apply shadow-lg;
+  }
+}
+
 /* Section */
+
 .section-container {
   @apply text-center flex flex-col items-center justify-center;
 }
+
 .section-header {
-  @apply mb-4 text-4xl font-bold;
+  @apply text-center pt-6 mb-4 text-4xl font-bold;
 }
+
 .section-subtitle {
   @apply text-center mb-6 px-4 text-base leading-normal font-bold;
 }
+
 .section-content {
-  @apply px-4 pb-8 leading-normal;
+  @apply text-left px-4 pb-8 leading-normal;
 }
+
 /* Carousel */
+
 .carousel {
   @apply w-3/4 rounded bg-primary text-white px-4 py-6 shadow-lg;
 }
+
 .carousel-text {
   @apply mb-4 text-sm leading-normal;
 }
+
 .carousel-author {
   @apply font-bold text-xs;
 }
+
 /* Form */
+
 form {
   @apply w-full;
 }
+
 .form-block {
   @apply mb-4;
 }
@@ -91,66 +170,90 @@ form {
 .form-input {
   @apply bg-grey-lighter border-2 border-grey-lighter rounded w-full py-4 px-4 text-grey-darker leading-tight;
 }
+
 /* Card */
+
 .card {
   @apply w-3/4 bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden p-8 mb-4;
 }
+
 .card-header {
   @apply text-lg leading-tight mb-6 text-primary;
 }
+
 .card-subtitle {
   @apply text-base leading-tight text-primary mb-2;
 }
+
 .card-content {}
+
 .card-link {
   @apply no-underline block pb-6 text-primary text-sm;
 }
+
 .contact-card-icon {
   @apply pr-4;
 }
+
 /* Icon */
+
 .icon {
   @apply px-4;
 }
+
 .icon-container {
   @apply text-3xl text-white my-4;
 }
+
 /* Service */
+
 .service-container {
   @apply w-full flex flex-col items-center justify-center pb-8;
 }
+
 .service {
   @apply w-3/4 mx-4 bg-white shadow-lg rounded flex flex-col px-4 py-4 mb-4 text-center;
 }
+
 .service-header {
   @apply text-lg mb-2 text-primary;
 }
+
 .service-icon {
   @apply mb-4 text-3xl text-primary;
 }
-/* ?? */
-.header-container {
-  @apply w-full flex flex-col items-center justify-center pt-8;
+
+form {
+  @apply w-3/4;
+}
+
+footer {
+  @apply bg-grey-lightest py-8 text-center;
 }
 .contact-container {
   @apply w-full flex flex-col text-center items-center justify-center pt-8;
 }
+
 .flex-container {
-  @apply w-full flex flex-col items-center justify-center py-4;
+  @apply w-full px-4 flex flex-col items-center justify-center py-4;
 }
+
 .about-container {
-  @apply w-full flex flex-col items-center justify-center py-4 text-center;
-}
-.carousel-container {
   @apply w-full flex flex-col items-center justify-center py-4;
 }
+
 .social-container {
   @apply w-full flex flex-col items-center justify-center py-4;
 }
+
 .image-container {
   @apply w-full flex flex-col items-center justify-center py-4;
 }
+
 @screen md {
+  .section-header {
+    @apply text-center w-full;
+  }
   .section-container {
     @apply flex-row text-left;
   }
@@ -169,34 +272,22 @@ form {
   .card {
     @apply w-1/2 mb-8;
   }
-  form {
-    @apply w-3/4;
-  }
   .flex-container {
     @apply pt-2 pb-8 ml-4 w-1/3;
   }
-  .about-container {
+  #about .flex-container {
     @apply pt-2 pb-8 ml-4 w-1/2;
   }
   .social-container {
     @apply pt-2 pb-2 w-1/2;
   }
   .carousel-container {
-    @apply pt-2 pb-8 ml-4;
+    @apply pt-2 pb-8 ml-4 w-full;
   }
   .image-container {
     @apply pt-8 pb-8 pl-8 w-1/2;
   }
   .contact-container {
     @apply w-1/2;
-  }
-}
-
-@screen lg {
-  .nav-btn {
-    @apply hidden;
-  }
-  .nav-menu {
-    @apply block flex justify-between items-center w-auto flex-grow;
   }
 }

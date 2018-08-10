@@ -4554,9 +4554,12 @@ button,
 }
 
 .gradient {
-  background: #396afc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2948ff, #396afc); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #396afc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2948ff, #396afc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .overlay {
@@ -4611,7 +4614,7 @@ button,
   border-color: #2948ff;
 }
 
-.nav-brand {
+.nav-brand-container {
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -4619,15 +4622,98 @@ button,
   margin-right: 1.5rem;
 }
 
+.nav-brand {
+  text-decoration: none;
+  color: #2948ff;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
 .nav-btn {
+  display: flex;
+  align-items: center;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #2948ff;
+}
+
+.hamburger-menu {
+  fill: currentColor;
+  height: .75rem;
+  width: .75rem;
+}
+
+.nav-link {
+  text-decoration: none;
   display: block;
+  margin-top: 1rem;
+  color: #2948ff;
+  font-weight: 600;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-content-container {
+  width: 100%;
   color: #2948ff;
 }
 
-.nav-menu {
-  display: none;
-  width: 100%;
-  color: #2948ff;
+.nav-cta {
+  margin-top: 1rem;
+}
+
+.nav-link-container {
+  font-size: .875rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .nav-cta-container {
+    align-content: flex-end;
+  }
+
+  .nav-cta {
+    margin-top: 0;
+  }
+
+  .nav-content-container {
+    display: block;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+  .nav-link-container {
+    flex-grow: 1;
+  }
+}
+
+.nav-btn {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+}
+
+.hover\:nav-btn:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
 }
 
 /* Section */
@@ -4641,6 +4727,8 @@ button,
 }
 
 .section-header {
+  text-align: center;
+  padding-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 2.25rem;
   font-weight: 700;
@@ -4657,6 +4745,7 @@ button,
 }
 
 .section-content {
+  text-align: left;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
@@ -4817,15 +4906,15 @@ form {
   color: #2948ff;
 }
 
-/* ?? */
+form {
+  width: 75%;
+}
 
-.header-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+footer {
+  background-color: #f8fafc;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 .contact-container {
@@ -4840,6 +4929,8 @@ form {
 
 .flex-container {
   width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4849,17 +4940,6 @@ form {
 }
 
 .about-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.carousel-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -4890,6 +4970,11 @@ form {
 }
 
 @media (min-width: 768px) {
+  .section-header {
+    text-align: center;
+    width: 100%;
+  }
+
   .section-container {
     flex-direction: row;
     text-align: left;
@@ -4921,10 +5006,6 @@ form {
     margin-bottom: 2rem;
   }
 
-  form {
-    width: 75%;
-  }
-
   .flex-container {
     padding-top: .5rem;
     padding-bottom: 2rem;
@@ -4932,7 +5013,7 @@ form {
     width: 33.33333%;
   }
 
-  .about-container {
+  #about .flex-container {
     padding-top: .5rem;
     padding-bottom: 2rem;
     margin-left: 1rem;
@@ -4949,6 +5030,7 @@ form {
     padding-top: .5rem;
     padding-bottom: 2rem;
     margin-left: 1rem;
+    width: 100%;
   }
 
   .image-container {
@@ -4960,21 +5042,6 @@ form {
 
   .contact-container {
     width: 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  .nav-btn {
-    display: none;
-  }
-
-  .nav-menu {
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    flex-grow: 1;
   }
 }
 

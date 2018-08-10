@@ -38,37 +38,37 @@
   </script>
 </head>
 <body onload="load()" class="font-primary">
-  <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 fixed shadow-lg border-t-4 border-primary">
-    <div class="flex items-center flex-no-shrink text-primary mr-6">
-      <a rel="noopener" data-scroll href="#home" class=" no-underline text-primary font-semibold text-xl">Onshore Studios</a>
+  <nav class="nav">
+    <div class="nav-brand-container">
+      <a rel="noopener" data-scroll href="#home" class="nav-brand">Onshore Studios</a>
     </div>
     <div class="block text-primary lg:hidden">
-      <button class="flex items-center px-3 py-2 rounded text-white bg-primary hover:shadow-lg" id="js-nav-menu-button">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <button class="nav-btn" id="js-nav-menu-button">
+        <svg class="hamburger-menu" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </button>
     </div>
-    <div class="hidden w-full lg:block lg:flex lg:items-center lg:w-auto text-primary" id="js-nav-menu">
-      <div class="flex items-center justify-center">
-        <div class="text-sm lg:flex-grow text-center">
-          <a rel="noopener" data-scroll href="#home" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
+    <div class="hidden nav-content-container" id="js-nav-menu">
+      <div class="nav-container">
+        <div class="nav-link-container">
+          <a rel="noopener" data-scroll href="#home" class="js-menu-dismiss nav-link">
             Home
           </a>
-          <a rel="noopener" data-scroll href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
+          <a rel="noopener" data-scroll href="#about" class="js-menu-dismiss nav-link">
             About
           </a>
-          <a rel="noopener" data-scroll href="#services" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
+          <a rel="noopener" data-scroll href="#services" class="js-menu-dismiss nav-link">
             Services
           </a>
-          <a rel="noopener" data-scroll href="#testimonials" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-primary md:mr-8 font-semibold border-b-2 border-white lg:hover:border-primary underline-transition nav-link">
+          <a rel="noopener" data-scroll href="#testimonials" class="js-menu-dismiss nav-link">
             Testimonials
           </a>
         </div>
       </div>
-      <div class="flex items-center justify-center lg:content-end text-center">
-        <a rel="noopener" data-scroll href="#contact" class="btn mt-4 lg:mt-0 mr-4">Contact</a>
+      <div class="nav-container">
+        <a rel="noopener" data-scroll href="#contact" class="btn nav-cta">Contact</a>
       </div>
     </div>
   </nav>
@@ -77,7 +77,7 @@
       <h1 class="section-header">Onshore Studios</h1>
     </section>
     <section id="about" class="section-container">
-      <div class="about-container">
+      <div class="flex-container">
         <h1 class="section-header text-primary">About</h1>
         <h2 class="section-subtitle text-primary">We have one goal, provide value to our clients through elegant design, seamless functionality, and enhanced content delivery.</h2>
         <p class="section-content">We are Onshore Studios. We offer a variety of services, focused on increasing conversion through digital mediums. We specialize in responsive, SEO friendly websites, and have experience with a variety of programming languages, frameworks, and technologies. Our other areas of expertise are graphic design, branding, and consulting.</p>
@@ -88,7 +88,7 @@
       </div>
     </section>
     <section id="services" class="section-container-alternate bg-primary">
-      <div class="header-container">
+      <div class="container">
         <h1 class="section-header text-white">Services</h1>
         <h2 class="section-subtitle text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
       </div>
@@ -131,12 +131,12 @@
         </div>
       </div>
     </section>
-    <section id="testimonials" class="bg-grey-lightest section-container-alternate text-center text-primary">
-      <div class="header-container">
+    <section id="testimonials" class="bg-grey-lightest section-container-alternate text-primary">
+      <div class="container">
         <h1 class="section-header">Testimonials</h1>
         <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
       </div>
-      <div class="carousel-container">
+      <div class="flex-container carousel-container">
         <div class="carousel">
           <p class="carousel-text">"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi
             erat porttitor ligula, eget lacinia odio sem nec elit"</p>
@@ -175,7 +175,7 @@
       <div class="contact-container bg-white text-primary">
         <h1 class="section-header">Contact Us</h1>
         <h2 class="section-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris.</h2>
-        <form action="" class="w-3/4">
+        <form action="">
           <div class="form-block">
             <label class="form-label" for="name">Name</label>
             <input class="form-input" id="name" type="text" placeholder="Jane Doe">
@@ -196,8 +196,8 @@
         </form>
       </div>
     </section>
-    <footer class="bg-grey-lightest py-8">
-      <div class="section-container-alternate text-center ">
+    <footer>
+      <div class="container">
         <p>© 2018 Onshore Studios</p>
       </div>
     </footer>
