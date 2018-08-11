@@ -348,6 +348,9 @@ footer {
 }
 
 @screen lg {
+  .hider {
+    @apply hidden;
+  }
   .service {
     min-height: 180px;
   }
