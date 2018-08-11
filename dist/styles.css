@@ -4579,24 +4579,21 @@ table {
 /* Color */
 
 .bg-primary {
-  background-color: #2948ff;
+  background-color: #1c1b20;
 }
 
 .text-primary {
-  color: #2948ff;
+  color: #1c1b20;
 }
 
 .border-primary {
-  border-color: #2948ff;
+  border-color: #1c1b20;
 }
 
 .gradient {
-  background: #396afc;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2948ff, #396afc);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2948ff, #396afc);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1c1b20; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #1c1b20); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #1c1b20); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* buttons */
@@ -4611,7 +4608,7 @@ table {
   padding-top: .5rem;
   padding-bottom: .5rem;
   line-height: 1.5;
-  background-color: #2948ff;
+  background-color: #1c1b20;
   color: #fff;
 }
 
@@ -4642,25 +4639,28 @@ table {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #fff;
-  padding: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   z-index: 10;
   position: fixed;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
   border-top-width: 4px;
-  border-color: #2948ff;
+  border-color: #1c1b20;
 }
 
 .nav-brand-container {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  color: #2948ff;
+  color: #1c1b20;
   margin-right: 1.5rem;
 }
 
 .nav-brand {
   text-decoration: none;
-  color: #2948ff;
+  color: #1c1b20;
   font-weight: 600;
   font-size: 1.25rem;
 }
@@ -4674,7 +4674,7 @@ table {
   padding-bottom: .5rem;
   border-radius: .25rem;
   color: #fff;
-  background-color: #2948ff;
+  background-color: #1c1b20;
 }
 
 .hamburger-menu {
@@ -4687,7 +4687,7 @@ table {
   text-decoration: none;
   display: block;
   margin-top: 1rem;
-  color: #2948ff;
+  color: #1c1b20;
   font-weight: 600;
 }
 
@@ -4700,7 +4700,7 @@ table {
 
 .nav-content-container {
   width: 100%;
-  color: #2948ff;
+  color: #1c1b20;
 }
 
 .nav-cta {
@@ -4774,7 +4774,7 @@ table {
 .carousel {
   width: 100%;
   text-align: center;
-  color: #2948ff;
+  color: #1c1b20;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1.5rem;
@@ -4818,7 +4818,7 @@ form {
 .form-label {
   text-align: left;
   display: block;
-  color: #2948ff;
+  color: #1c1b20;
   margin-bottom: .5rem;
 }
 
@@ -4856,13 +4856,13 @@ form {
   font-size: 1.125rem;
   line-height: 1.25;
   margin-bottom: 1.5rem;
-  color: #2948ff;
+  color: #1c1b20;
 }
 
 .card-subtitle {
   font-size: 1rem;
   line-height: 1.25;
-  color: #2948ff;
+  color: #1c1b20;
   margin-bottom: .5rem;
 }
 
@@ -4870,7 +4870,7 @@ form {
   text-decoration: none;
   display: block;
   padding-bottom: 1.5rem;
-  color: #2948ff;
+  color: #1c1b20;
   font-size: .875rem;
 }
 
@@ -4923,13 +4923,13 @@ form {
 .service-header {
   font-size: 1.125rem;
   margin-bottom: 1rem;
-  color: #2948ff;
+  color: #1c1b20;
 }
 
 .service-icon {
   margin-bottom: 1rem;
   font-size: 1.875rem;
-  color: #2948ff;
+  color: #1c1b20;
 }
 
 .service-content {
@@ -4940,7 +4940,7 @@ form {
 /* Containers */
 
 footer {
-  background-color: #2948ff;
+  background-color: #1c1b20;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
