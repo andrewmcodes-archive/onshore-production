@@ -10,6 +10,8 @@
   <meta name="robots" content="all,follow">
   <link rel="stylesheet" href="./dist/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="apple-touch-icon" sizes="180x180" href="./dist/images/favicon/apple-touch-icon.png">
@@ -77,9 +79,12 @@
   <div class="js-menu-dismiss z-10 bg-grey-lightest w-full">
     <section id="home" class="section-container h-screen gradient text-white">
       <div class="header-container">
-        <h1 class="home-header">Onshore</h1>
-        <h1 class="home-header">Studios</h1>
-        <p class="home-content">Throw some stuff here I guess..maybe a button too</p>
+        <h1 class="home-header font-header">Onshore Studios</h1>
+        <p class="home-content">We design and develop websites that generate value for our customers</p>
+        <div class="button-container">
+          <a href="#contact" class="btn w-full md:w-auto">Contact Us</a>
+          <a href="#services" class="btn-alternate w-full md:w-auto">Our Services</a>
+        </div>
       </div>
       <div class="flex-container w-screen h-full opacity-50 absolute z-0">
         <img src="./dist/images/onshore-logo.svg" width="640px" alt="" class="logo">
@@ -88,59 +93,118 @@
     <section id="about" class="section-container">
       <div class="flex-container">
         <h1 class="section-header text-primary">About</h1>
-        <h2 class="section-subtitle text-primary">We have one goal, provide value to our clients through elegant design, seamless functionality, and enhanced content
-          delivery.</h2>
+        <h2 class="section-subtitle text-primary">Our goal is to provide value to our clients through elegant design, seamless functionality, and enhanced content
+          delivery.
+        </h2>
         <p class="section-content">We are Onshore Studios. We offer a variety of services, focused on increasing conversion through digital mediums.
           We specialize in responsive, SEO friendly websites, and have experience with a variety of programming languages,
           frameworks, and technologies. Our other areas of expertise are graphic design, branding, and consulting.</p>
         <a href="#contact" class="btn">Let us help</a>
       </div>
       <div class="image-container bg-grey-lightest">
-        <img class="px-8" src="./dist/images/iPad.svg" width="563px" alt="">
+        <img class="px-8" src="./dist/images/ideas.svg" width="240px" alt="">
       </div>
     </section>
     <section id="services" class="section-container-alternate bg-primary">
       <div class="container">
         <h1 class="section-header text-white">Services</h1>
-        <h2 class="section-subtitle text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.</h2>
       </div>
       <div class="service-container">
         <div class="service">
-          <i class="service-icon fas fa-bolt"></i>
+          <i class="service-icon fas fa-search"></i>
           <h1 class="service-header">
-            Performance
+            Discovery
           </h1>
           <p class="service-content">
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
+            We will research your industry, and competitors, in order to make sure your business comes out on top
           </p>
         </div>
         <div class="service">
-          <i class="service-icon fas fa-universal-access"></i>
+          <i class="service-icon fas fa-palette"></i>
           <h1 class="service-header">
-            Accessibility
+            Branding
           </h1>
           <p class="service-content">
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
+            From logos to digital advertisements, we offer many graphic design services</p>
+        </div>
+        <div class="service">
+          <i class="service-icon fas fa-edit"></i>
+          <h1 class="service-header">
+            Design
+          </h1>
+          <p class="service-content">
+            We’ll help you stand out from your competitors with our creative designs.
+
           </p>
         </div>
         <div class="service">
           <i class="service-icon fas fa-code"></i>
           <h1 class="service-header">
-            Best Practices
+            Development
           </h1>
           <p class="service-content">
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
+            We create responsive websites, using the current best practices, to increase online conversion
           </p>
         </div>
-        <div class="service">
-          <i class="service-icon fas fa-chart-line"></i>
+      </div>
+      <div class="container">
+        <h1 class="section-header text-white">We are skilled at</h1>
+      </div>
+      <div class="service-container mx-auto max-w-md">
+        <div class="service-alternate">
+          <i class="service-icon fab fa-css3-alt"></i>
+
           <h1 class="service-header">
-            SEO
+            CSS3
           </h1>
-          <p class="service-content">
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus
-          </p>
         </div>
+        <div class="service-alternate">
+          <i class="service-icon fab fa-git-square"></i>
+          <h1 class="service-header">
+            Git
+          </h1>
+        </div>
+        <div class="service-alternate">
+          <i class="service-icon fab fa-html5"></i>
+          <h1 class="service-header">
+            HTML5
+          </h1>
+        </div>
+        <div class="service-alternate">
+          <i class="service-icon fab fa-js-square"></i>
+          <h1 class="service-header">
+            Javascript
+          </h1>
+        </div>
+      </div>
+      <div class="service-container mx-auto max-w-md">
+        <div class="service-alternate">
+          <i class="service-icon fab fa-node-js"></i>
+          <h1 class="service-header">
+            Node.js
+          </h1>
+        </div>
+        <div class="service-alternate">
+          <i class="service-icon fab fa-react"></i>
+          <h1 class="service-header">
+            React
+          </h1>
+        </div>
+        <div class="service-alternate">
+          <i class="service-icon fab fa-php"></i>
+          <h1 class="service-header">
+            PHP
+          </h1>
+        </div>
+        <div class="service-alternate">
+          <i class="service-icon fab fa-sass"></i>
+          <h1 class="service-header">
+            Sass
+          </h1>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="bottom-header">and much more!</p>
       </div>
     </section>
     <section id="testimonials" class="bg-grey-lightest section-container-alternate text-primary">
@@ -159,7 +223,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="section-container bg-grey-lightest mb-8">
+    <section id="contact" class="section-container bg-grey-lightest">
       <div class="social-container bg-primary">
         <div class="card">
           <h1 class="card-header">Onshore Studios</h1>
