@@ -53,7 +53,7 @@ font-family: 'Chivo', sans-serif;
 /* Nav */
 
 .nav {
-  @apply w-full flex items-center justify-between flex-wrap bg-white py-4 px-6 z-50 fixed shadow-lg;
+  @apply w-full flex items-center justify-between flex-wrap bg-primary py-4 px-6 z-50 fixed shadow-lg;
 }
 
 .nav-brand-container {
@@ -61,11 +61,11 @@ font-family: 'Chivo', sans-serif;
 }
 
 .nav-brand {
-  @apply no-underline text-primary font-semibold text-xl;
+  @apply no-underline text-primary font-semibold text-xl text-white;
 }
 
 .nav-btn {
-  @apply flex items-center px-3 py-2 rounded text-white bg-primary;
+  @apply flex items-center px-3 py-2 rounded text-white bg-primary border border-white;
 }
 
 .hamburger-menu {
@@ -73,21 +73,23 @@ font-family: 'Chivo', sans-serif;
 }
 
 .nav-link {
-  @apply no-underline block mt-4 text-primary font-semibold
+  @apply no-underline block mt-4 text-white font-semibold;
 }
 
 .nav-container {
-  @apply flex bg-white items-center justify-center text-center
+  @apply flex bg-primary items-center justify-center text-center
 }
 
 .nav-content-container {
-  @apply w-full text-primary;
+  @apply w-full text-white;
 }
 
 .nav-cta {
-  @apply mt-4;
+  @apply mt-4 bg-primary border-2 border-white mr-2;
 }
-
+.nav-cta:hover {
+  @apply bg-white text-primary;
+}
 .nav-link-container {
   @apply text-sm text-center;
 }
