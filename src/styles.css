@@ -157,6 +157,14 @@ form {
   @apply mb-4;
 }
 
+.form-block-submit {
+  @apply flex flex-col mx-auto mb-2 text-center;
+}
+
+#captcha {
+  @apply w-full mb-4;
+  min-width: 320px;
+}
 .form-label {
   @apply text-left block text-primary mb-2;
 }
