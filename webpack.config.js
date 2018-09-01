@@ -5,6 +5,7 @@ const path = require("path");
 const glob = require("glob-all");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -66,6 +67,22 @@ module.exports = {
     ]
   },
   plugins: [
+    new FaviconsWebpackPlugin({
+      logo: './src/images/onshore-logo.svg',
+      inject: true,
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: false,
+        favicons: true,
+        firefox: true,
+        opengraph: false,
+        twitter: true,
+        yandex: false,
+        windows: false
+      }
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
