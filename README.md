@@ -1,6 +1,6 @@
-# Tailwind CSS Webpack 4 Starter Project
+# Onshore Studios Production Website
 
-This is an example of a Webpack 4 setup for using [Tailwind CSS](https://tailwindcss.com). This is also my attempt to further my understanding of Webpack 4.
+This is the official website of Onshore Studios.
 
 To get started, clone the project and install the dependencies:
 
@@ -59,7 +59,3 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ## Issues
 
 Feel free to submit issues and enhancement requests!
-
-## Acknowledgements
-
-Most of the code from this project was created from forking [Tailwindcss/webpack-starter](https://github.com/tailwindcss/webpack-starter) and [azdanov/tailwind-starter](https://github.com/azdanov/tailwind-starter).
