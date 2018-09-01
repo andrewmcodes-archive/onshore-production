@@ -4,6 +4,13 @@ import './images/ideas.svg';
 import './images/onshore-logo.svg';
 import './images/profile-picture.jpg';
 import './images/profile-picture.jpg';
+import './images/mstile-150x150.png';
+import './images/favicon.ico';
+import './images/favicon-32x32.png';
+import './images/favicon-16x16.png';
+import './images/apple-touch-icon.png';
+import './images/android-chrome-512x512.png';
+import './images/android-chrome-192x192.png';
 
 document.addEventListener("DOMContentLoaded", function(){
   var menu = document.getElementById("js-nav-menu")
