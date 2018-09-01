@@ -1,4 +1,5 @@
-"use strict";
+import './styles.css';
+import './index.html';
 
 document.addEventListener("DOMContentLoaded", function(){
   var menu = document.getElementById("js-nav-menu")
@@ -16,3 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
 function toggleMenu() {
   document.getElementById("js-nav-menu").classList.toggle("hidden");
 }
+
+var shiftWindow = function() { scrollBy(0, -60) };
+window.addEventListener("hashchange", shiftWindow);
+function load() { if (window.location.hash) shiftWindow(); }
