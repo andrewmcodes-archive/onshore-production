@@ -5,12 +5,12 @@ import './images/onshore-logo.svg';
 import './images/profile-picture.jpg';
 import './images/profile-picture.jpg';
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
   var menu = document.getElementById("js-nav-menu")
   var closeElements = document.getElementsByClassName("js-menu-dismiss")
-  for (var i=0; i< closeElements.length; i++){
-    closeElements[i].addEventListener("click", function(){
-      if(!menu.classList.contains("hidden")){
+  for (var i = 0; i < closeElements.length; i++) {
+    closeElements[i].addEventListener("click", function () {
+      if (!menu.classList.contains("hidden")) {
         menu.classList.add("hidden");
       }
     })
@@ -22,6 +22,11 @@ function toggleMenu() {
   document.getElementById("js-nav-menu").classList.toggle("hidden");
 }
 
-var shiftWindow = function() { scrollBy(0, -60) };
+var shiftWindow = function () {
+  scrollBy(0, -60)
+};
 window.addEventListener("hashchange", shiftWindow);
-function load() { if (window.location.hash) shiftWindow(); }
+
+function load() {
+  if (window.location.hash) shiftWindow();
+}
