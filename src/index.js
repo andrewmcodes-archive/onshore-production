@@ -1,5 +1,9 @@
 import './styles.css';
 import './index.html';
+import './images/ideas.svg';
+import './images/onshore-logo.svg';
+import './images/profile-picture.jpg';
+import './images/profile-picture.jpg';
 
 document.addEventListener("DOMContentLoaded", function(){
   var menu = document.getElementById("js-nav-menu")

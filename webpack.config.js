@@ -25,14 +25,27 @@ module.exports = {
     path: path.resolve(__dirname, "build")
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.p?css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          { loader: "css-loader", options: { importLoaders: 1 } },
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1
+            }
+          },
           "postcss-loader"
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: "./images/[name].[ext]",
+          }
+        }
       },
       {
         test: /\.(html)$/,
@@ -57,17 +70,17 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
-    isDev
-      ? dev()
-      : new PurgecssPlugin({
-          paths: glob.sync([path.join(__dirname, "./**/*.html")]),
-          extractors: [
-            {
-              extractor: TailwindExtractor,
-              extensions: ["html", "js"]
-            }
-          ]
-        }),
-    new HtmlWebpackPlugin({ template: "./src/index.html" })
+    isDev ?
+    dev() :
+    new PurgecssPlugin({
+      paths: glob.sync([path.join(__dirname, "./**/*.html")]),
+      extractors: [{
+        extractor: TailwindExtractor,
+        extensions: ["html", "js"]
+      }]
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    })
   ]
 };
