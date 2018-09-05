@@ -117,10 +117,6 @@ section {
   @apply w-full;
 }
 
-#recent-work {
-  @apply bg-black text-white min-h-screen;
-}
-
 h1 {
   @apply text-lg mb-4;
 }
@@ -138,7 +134,7 @@ h2 {
 }
 
 .section-header {
-  @apply py-8 px-6 flex flex-col content-center justify-center text-left w-full;
+  @apply py-6 px-6 flex flex-col content-center justify-center text-left w-full;
 }
 
 .section-content-grid {
@@ -172,4 +168,38 @@ a {
 /* Testimonial */
 .testimonial-author {
   @apply font-bold mt-4;
+}
+.circle {
+@apply h-24 w-24 mx-auto mb-6 bg-grey-lightest rounded-full block overflow-hidden;
+}
+
+/* contact */
+form {
+  @apply w-full px-6 mt-2;
+}
+.form-block input, textarea {
+  @apply w-full p-4 mb-2 leading-normal;
+}
+#contact .section-content p {
+  @apply text-center px-6 mb-4;
+}
+#contact .btn {
+  @apply w-full mb-4 bg-black;
+}
+
+/* footer  */
+footer {
+  @apply p-6 bg-black text-white;
+}
+.footer-content {
+  @apply text-sm text-center;
+}
+
+/* Section Specific */
+#recent-work, #about, #solutions {
+  @apply bg-black text-white;
+}
+
+#solutions .section-content, #about .section-content  {
+  @apply text-grey-light;
 }
