@@ -34,7 +34,7 @@
 </head>
 
 <body class="font-primary">
-  <!-- <nav class="nav" id="myNav">
+  <nav class="nav" id="myNav">
     <div class="nav-brand-container">
       <a rel="noopener" data-scroll href="#home" class="nav-brand">Onshore Studios</a>
     </div>
@@ -64,11 +64,12 @@
         </div>
       </div>
       <div class="nav-container">
-        <a rel="noopener" data-scroll href="#contact-us-form" class="btn nav-cta">Contact</a>
+        <a rel="noopener" data-scroll href="#contact" class="btn nav-cta">Contact</a>
       </div>
     </div>
-  </nav> -->
+  </nav>
   <div class="js-menu-dismiss z-10 bg-grey-lightest w-full">
+    <section id="home"></section>
     <section id="about">
       <div class="section-header">
         <h1>We provide value for our clients</h1>
@@ -168,7 +169,7 @@
         </p>
       </div>
       <div class="section-content">
-        <form action="">
+        <form  method="POST" netlify-recaptcha netlify action="/">
           <div class="form-block">
             <input type="text" class="" name="name" id="name" placeholder="Your Name">
           </div>

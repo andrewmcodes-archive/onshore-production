@@ -32,7 +32,7 @@
 
 /* Nav */
 .nav {
-  @apply bg-primary w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
+  @apply bg-black w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
 }
 
 .nav-brand-container {
@@ -147,12 +147,15 @@ h2 {
 .section-content-flex {
   @apply flex flex-col px-6;
 }
+
 .section-content-flex .section-item {
   @apply mb-6 leading-normal;
 }
+
 .section-content-flex p {
   @apply text-grey-darkest;
 }
+
 .section-item {
   @apply mb-4;
 }
@@ -169,20 +172,25 @@ a {
 .testimonial-author {
   @apply font-bold mt-4;
 }
+
 .circle {
-@apply h-24 w-24 mx-auto mb-6 bg-grey-lightest rounded-full block overflow-hidden;
+  @apply h-24 w-24 mx-auto mb-6 bg-grey-lightest rounded-full block overflow-hidden;
 }
 
 /* contact */
 form {
   @apply w-full px-6 mt-2;
 }
-.form-block input, textarea {
+
+.form-block input,
+textarea {
   @apply w-full p-4 mb-2 leading-normal;
 }
+
 #contact .section-content p {
   @apply text-center px-6 mb-4;
 }
+
 #contact .btn {
   @apply w-full mb-4 bg-black;
 }
@@ -191,15 +199,19 @@ form {
 footer {
   @apply p-6 bg-black text-white;
 }
+
 .footer-content {
   @apply text-sm text-center;
 }
 
 /* Section Specific */
-#recent-work, #about, #solutions {
+#recent-work,
+#about,
+#solutions {
   @apply bg-black text-white;
 }
 
-#solutions .section-content, #about .section-content  {
+#solutions .section-content,
+#about .section-content {
   @apply text-grey-light;
 }
