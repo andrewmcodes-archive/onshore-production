@@ -7,12 +7,12 @@
 }
 
 .bg-primary {
-  @apply bg-grey-dark;
+  @apply bg-grey-darkest;
 }
 
 /* Font */
 .font-primary {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 /* buttons */
@@ -40,7 +40,7 @@
 }
 
 .nav-brand {
-  @apply no-underline font-semibold text-xl text-white;
+  @apply no-underline font-semibold text-lg text-white;
 }
 
 .nav-btn {
@@ -51,12 +51,8 @@
   @apply fill-current h-3 w-3;
 }
 
-.nav-link {
-  @apply no-underline block mt-4 text-white font-semibold;
-}
-
 .nav-container {
-  @apply flex items-center justify-center text-center
+  @apply flex items-center justify-center text-center min-h-screen;
 }
 
 .nav-content-container {
@@ -72,7 +68,11 @@
 }
 
 .nav-link-container {
-  @apply text-sm text-center;
+  @apply text-sm text-right w-full px-6 text-2xl;
+}
+
+.nav-link {
+  @apply no-underline block mt-4 text-white font-bold;
 }
 
 @variants hover {
@@ -83,7 +83,23 @@
 
 @screen md {
   .nav-link {
-    @apply mr-8;
+    @apply mr-8 text-sm font-light mt-2 align-baseline;
+  }
+  .nav {
+    @apply h-16;
+  }
+  .nav-link-container:last-child {
+    @apply pr-0 mb-1;
+  }
+  .nav-link:last-child {
+    @apply mr-0;
+  }
+  .nav-content-container {
+    @apply h-16;
+  }
+  .nav-container {
+    @apply h-16;
+    min-height: 2rem;
   }
 }
 
@@ -114,7 +130,7 @@
 }
 
 section {
-  @apply w-full;
+  @apply w-full py-8;
 }
 
 h1 {
@@ -214,4 +230,29 @@ footer {
 #solutions .section-content,
 #about .section-content {
   @apply text-grey-light;
+}
+#about {
+  @apply -mt-6;
+}
+#home {
+  @apply px-6 min-h-screen flex flex-col justify-center;
+}
+.logo-header {
+  @apply flex items-center content-center mb-4;
+}
+.logo-header img {
+  height: 32px;
+  @apply mr-2;
+}
+.logo-header h1 {
+  @apply mb-0;
+}
+.home-content {
+
+}
+.home-content h1 {
+  @apply text-xl;
+}
+.home-content h2 {
+  @apply leading-normal font-light mb-6;
 }
