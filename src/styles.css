@@ -204,7 +204,7 @@ textarea {
 }
 
 #contact .section-content p {
-  @apply text-center px-6 mb-4;
+  @apply text-center px-6 mt-4 mb-4;
 }
 
 #contact .btn {
