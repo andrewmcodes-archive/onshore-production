@@ -7,7 +7,7 @@
 }
 
 .bg-primary {
-  @apply bg-grey-darkest;
+  background: linear-gradient(90deg, #00c6fb, #005bea 200%);
 }
 
 /* Font */
@@ -32,7 +32,7 @@
 
 /* Nav */
 .nav {
-  @apply bg-black w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
+  @apply bg-primary w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
 }
 
 .nav-brand-container {
@@ -133,9 +133,11 @@
     @apply flex-grow;
   }
 }
+
 section {
   @apply relative z-10;
 }
+
 a {
   @apply border-b-2 border-black no-underline;
 }
@@ -157,7 +159,7 @@ h2 {
 }
 
 .section-subtitle {
-  @apply text-lg text-grey-dark leading-normal;
+  @apply text-lg text-grey-lightest leading-normal;
 }
 
 .section-content {
@@ -239,7 +241,7 @@ footer {
 #recent-work,
 #about,
 #solutions {
-  @apply bg-black text-white;
+  @apply bg-primary text-white;
 }
 
 #solutions .section-content,
@@ -257,6 +259,7 @@ footer {
 
 #home a {
   @apply text-white;
+
 }
 
 @screen md {
