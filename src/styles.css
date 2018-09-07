@@ -52,7 +52,7 @@
 }
 
 .nav-container {
-  @apply flex items-center justify-center text-center min-h-screen;
+  @apply flex justify-center text-center min-h-screen mt-8;
 }
 
 .nav-content-container {
@@ -72,7 +72,7 @@
 }
 
 .nav-link {
-  @apply no-underline block mt-4 text-white font-bold;
+  @apply no-underline block mt-8 text-white font-bold;
 }
 
 @variants hover {
