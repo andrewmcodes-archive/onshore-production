@@ -237,6 +237,11 @@ footer {
 #home {
   @apply px-6 min-h-screen flex flex-col justify-center;
 }
+@screen md {
+  .section-header, .section-content-flex, #contact .section-content, #home {
+    @apply w-1/2 mx-auto;
+  }
+}
 .logo-header {
   @apply flex items-center content-center mb-4;
 }
