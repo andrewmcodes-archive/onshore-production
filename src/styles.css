@@ -133,7 +133,9 @@
     @apply flex-grow;
   }
 }
-
+section {
+  @apply relative z-10;
+}
 a {
   @apply border-b-2 border-black no-underline;
 }
@@ -163,7 +165,7 @@ h2 {
 }
 
 .section-header {
-  @apply py-6 px-6 flex flex-col content-center justify-center text-left w-full;
+  @apply py-6 px-6 flex flex-col content-center justify-center text-left w-full z-10;
 }
 
 .section-content-grid {
@@ -208,7 +210,7 @@ a {
 
 /* contact */
 form {
-  @apply w-full px-6 mt-2;
+  @apply w-full px-6 mt-2 z-10 relative;
 }
 
 .form-block input,
@@ -250,7 +252,11 @@ footer {
 }
 
 #home {
-  @apply px-6 min-h-screen flex flex-col justify-center;
+  @apply px-6 min-h-screen flex flex-col justify-center text-white;
+}
+
+#home a {
+  @apply text-white;
 }
 
 @screen md {
@@ -284,4 +290,53 @@ footer {
 
 .home-content h2 {
   @apply leading-normal font-light mb-6;
+}
+
+.color-container {
+  margin-top: 20vh;
+  background: linear-gradient(90deg, #00c6fb, #005bea 200%);
+  width: 100%;
+  height: 50vh;
+  transform:
+    skewY(-12deg);
+  position: absolute;
+  z-index: 0;
+}
+
+.rect1 {
+  margin: 0;
+  width: 30vw;
+  background: white;
+  opacity: 0.1;
+  height: 5vh;
+  float: left;
+}
+
+.rect2 {
+  margin: 0;
+  width: 20vw;
+  background: white;
+  opacity: 0.2;
+  height: 5vh;
+  float: left;
+  clear: left;
+}
+
+.rect3 {
+  margin: ;
+  width: 20vw;
+  background: white;
+  opacity: 0.5;
+  height: 5vh;
+  float: right;
+}
+
+.rect4 {
+  margin: 0;
+  width: 30vw;
+  background: white;
+  opacity: 0.1;
+  height: 5vh;
+  float: right;
+  clear: right;
 }
