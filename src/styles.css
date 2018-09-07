@@ -85,18 +85,23 @@
   .nav-link {
     @apply mr-8 text-sm font-light mt-2 align-baseline;
   }
+
   .nav {
     @apply h-16;
   }
+
   .nav-link-container:last-child {
     @apply pr-0 mb-1;
   }
+
   .nav-link:last-child {
     @apply mr-0;
   }
+
   .nav-content-container {
     @apply h-16;
   }
+
   .nav-container {
     @apply h-16;
     min-height: 2rem;
@@ -127,6 +132,14 @@
   .nav-link-container {
     @apply flex-grow;
   }
+}
+
+a {
+  @apply border-b-2 border-black no-underline;
+}
+
+a:hover {
+  @apply text-black;
 }
 
 section {
@@ -231,33 +244,44 @@ footer {
 #about .section-content {
   @apply text-grey-light;
 }
+
 #about {
   @apply -mt-6;
 }
+
 #home {
   @apply px-6 min-h-screen flex flex-col justify-center;
 }
+
 @screen md {
-  .section-header, .section-content-flex, #contact .section-content, #home {
+
+  .section-header,
+  .section-content-flex,
+  #contact .section-content,
+  #home {
     @apply w-1/2 mx-auto;
   }
 }
+
 .logo-header {
   @apply flex items-center content-center mb-4;
 }
+
 .logo-header img {
   height: 32px;
   @apply mr-2;
 }
+
 .logo-header h1 {
   @apply mb-0;
 }
-.home-content {
 
-}
+.home-content {}
+
 .home-content h1 {
   @apply text-xl;
 }
+
 .home-content h2 {
   @apply leading-normal font-light mb-6;
 }
