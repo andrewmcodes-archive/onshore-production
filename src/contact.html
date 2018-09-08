@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Onshore Studios</title>
+  <meta name="description" content="We build amazing websites">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-99046738-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <meta name="robots" content="all,follow">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./main.css">
+  <script src="../build/main.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+</head>
+
+<body class="font-primary">
+  <nav class="nav" id="myNav">
+    <div class="nav-brand-container">
+      <a rel="noopener" data-scroll href="#home" class="nav-brand">Onshore Studios</a>
+    </div>
+    <div class="hider block text-primary lg:hidden">
+      <button class="nav-btn" id="js-nav-menu-button">
+        <svg class="hamburger-menu" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden nav-content-container" id="js-nav-menu">
+      <div class="nav-container">
+        <div class="nav-link-container">
+          <a rel="noopener" data-scroll href="./index.html#home" class="js-menu-dismiss nav-link">
+            Home
+          </a>
+          <a rel="noopener" data-scroll href="./index.html#about" class="js-menu-dismiss nav-link">
+            About
+          </a>
+          <a rel="noopener" data-scroll href="./index.html#services" class="js-menu-dismiss nav-link">
+            Services
+          </a>
+          <a rel="noopener" data-scroll href="./index.html#solutions" class="js-menu-dismiss nav-link">
+            Solutions
+          </a>
+          <a rel="noopener" data-scroll href="./index.html#testimonials" class="js-menu-dismiss nav-link">
+            Testimonials
+          </a>
+          <a rel="noopener" data-scroll href="./index.html#recent-work" class="js-menu-dismiss nav-link">
+            Recent Work
+          </a>
+          <a rel="noopener" data-scroll href="#contact" class="js-menu-dismiss nav-link">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="js-menu-dismiss pt-12 z-10 bg-grey-lightest w-full">
+    <section id="contact">
+      <div class="section-header">
+        <h1>Contact Us</h1>
+        <p class="section-subtitle">
+          We are currently open for new projects
+        </p>
+      </div>
+      <div class="section-content">
+        <form method="POST" netlify-recaptcha netlify action="./index.html">
+          <div class="form-block">
+            <input type="text" class="" name="name" id="name" placeholder="Your Name">
+          </div>
+          <div class="form-block">
+            <input type="email" class="" name="email" id="email" placeholder="Your Email Address">
+          </div>
+          <div class="form-block">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please leave a short summary of the project you would like us to help with"></textarea>
+          </div>
+          <div class="form-block">
+            <button class="btn" type="submit">Send Message</button>
+          </div>
+        </form>
+        <p class="section-content">
+          Or you can email us at <a href="mailto:onshorestudios@gmail.com">onshorestudios@gmail.com</a>
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <p>All content © Onshore Studios 2018</p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+</body>
+
+</html>
