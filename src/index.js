@@ -1,11 +1,11 @@
-import './styles.css';
-import './index.html';
-import './images/onshore_logo.svg';
-import './images/stapleton.jpg';
-import './images/jessi.jpg';
-import './images/spencer.jpg';
-import './images/uncw_logo.jpg';
-import './images/profile_picture.jpg';
+import styles from './styles.css';
+import html from './index.html';
+import onshore from './images/onshore_logo.svg';
+import stapleton from './images/stapleton.jpg';
+import jessi from './images/jessi.jpg';
+import spencer from './images/spencer.jpg';
+import aqxLogo from './images/uncw_logo.jpg';
+import drStapleton from './images/profile_picture.jpg';
 
 document.addEventListener("DOMContentLoaded", function () {
   var menu = document.getElementById("js-nav-menu")
