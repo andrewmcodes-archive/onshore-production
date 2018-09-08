@@ -21,7 +21,7 @@
 }
 
 .btn-alternate {
-  @apply ml-4 no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white;
+  @apply ml-4 no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white bg-black;
 }
 
 .btn:hover {
@@ -160,11 +160,14 @@ h2 {
   @apply text-base mb-2;
 }
 .section-btn {
-  @apply px-6 text-sm flex flex-col content-center;
+  @apply px-6 text-sm flex flex-row items-center justify-center;
 }
-.section-btn a {
+.section-btn {
+  @apply pr-4;
+}
+/* .section-btn a {
   @apply text-left w-1/4 mt-4;
-}
+} */
 .section-subtitle {
   @apply text-lg text-grey-dark leading-normal;
 }
