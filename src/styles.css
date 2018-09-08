@@ -107,7 +107,9 @@
     min-height: 2rem;
   }
 }
-
+  .hider {
+    @apply hidden;
+  }
 @screen lg {
   .hider {
     @apply hidden;

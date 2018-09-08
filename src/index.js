@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleMenu() {
-  document.getElementById("js-nav-menu").classList.toggle("hider");
+  document.getElementById("js-nav-menu").classList.toggle("hidden");
 }
 
 var shiftWindow = function () {
