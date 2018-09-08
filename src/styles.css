@@ -18,15 +18,19 @@
 a {
   @apply border-b-2 border-black no-underline;
 }
+
 a:hover {
   @apply text-black border-b-2 border-blue;
 }
+
 .nav a:hover {
   @apply text-white border-b-2 border-blue;
 }
+
 .section-content-grid a {
   @apply text-center block;
 }
+
 /* buttons */
 .btn {
   @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white;
@@ -41,9 +45,11 @@ a:hover {
   transition-timing-function: linear;
   transition-duration: 200ms;
 }
+
 .btn-alternate:hover {
   @apply shadow-lg text-white;
 }
+
 /* Nav */
 .nav {
   @apply bg-black w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
@@ -121,9 +127,11 @@ a:hover {
     min-height: 2rem;
   }
 }
-  .hider {
-    @apply hidden;
-  }
+
+.hider {
+  @apply hidden;
+}
+
 @screen lg {
   .hider {
     @apply hidden;
@@ -161,20 +169,25 @@ h1 {
 h2 {
   @apply text-base mb-2;
 }
+
 .section-btn {
   @apply px-6 text-sm flex flex-col items-center justify-center;
 }
+
 .section-btn p {
   @apply mb-6;
 }
+
 @screen md {
   .section-btn {
     @apply flex-row;
   }
+
   .section-btn p {
     @apply mb-0 pr-6;
   }
 }
+
 .section-subtitle {
   @apply text-lg text-grey-dark leading-normal;
 }
@@ -193,16 +206,19 @@ h2 {
   grid-gap: 14px;
   @apply px-6 text-grey-darkest;
 }
+
 @screen md {
   .section-content-grid {
     @apply px-0 w-3/4 mx-auto;
   }
 }
+
 @screen lg {
   .section-content-grid {
     @apply w-1/2;
   }
 }
+
 .section-content-flex {
   @apply flex flex-col px-6;
 }
@@ -292,6 +308,7 @@ footer {
     @apply w-3/4 mx-auto;
   }
 }
+
 @screen lg {
 
   .section-header,
@@ -314,7 +331,6 @@ footer {
 .logo-header h1 {
   @apply mb-0;
 }
-
 
 .home-content h1 {
   @apply text-xl;
