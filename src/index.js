@@ -1,11 +1,11 @@
 import './styles.css';
 import './index.html';
-import './images/onshore-logo.svg';
+import './images/onshore_logo.svg';
 import './images/stapleton.jpg';
 import './images/jessi.jpg';
 import './images/spencer.jpg';
-import './images/uncw-logo.jpg';
-import './images/profile-picture.jpg';
+import './images/uncw_logo.jpg';
+import './images/profile_picture.jpg';
 
 document.addEventListener("DOMContentLoaded", function () {
   var menu = document.getElementById("js-nav-menu")

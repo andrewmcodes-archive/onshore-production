@@ -45,6 +45,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: "./images/[name].[ext]",
+            disable: true,
           }
         }
       },
@@ -68,7 +69,7 @@ module.exports = {
   },
   plugins: [
     new FaviconsWebpackPlugin({
-      logo: './src/images/onshore-logo.svg',
+      logo: './src/images/onshore_logo.svg',
       inject: true,
       icons: {
         android: true,
