@@ -100,7 +100,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/index.html"
-    }),
+    }), // Generates default index.html
     new HtmlWebpackPlugin({
       filename: "contact.html",
       template: "./src/contact.html"
