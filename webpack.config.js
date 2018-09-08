@@ -6,7 +6,6 @@ const glob = require("glob-all");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-
 const isDev = process.env.NODE_ENV === "development";
 
 class TailwindExtractor {

@@ -16,15 +16,11 @@
 }
 
 a {
-  @apply border-b-2 border-black no-underline;
+  @apply no-underline text-grey-dark;
 }
 
 a:hover {
-  @apply text-black border-b-2 border-blue;
-}
-
-.nav a:hover {
-  @apply text-white border-b-2 border-blue;
+  @apply text-blue;
 }
 
 .section-content-grid a {
@@ -77,6 +73,10 @@ a:hover {
 
 .nav-content-container {
   @apply w-full text-white;
+}
+
+nav .icon-container {
+  @apply mt-8;
 }
 
 .nav-cta {
@@ -215,7 +215,7 @@ h2 {
 
 @screen lg {
   .section-content-grid {
-    @apply w-1/2;
+    @apply w-2/3;
   }
 }
 
@@ -237,10 +237,6 @@ h2 {
 
 .section-item-content {
   @apply mt-2 text-center text-white;
-}
-
-a {
-  @apply text-grey-dark;
 }
 
 /* Testimonial */
@@ -268,15 +264,6 @@ textarea {
 
 #contact .btn {
   @apply w-full mb-4 bg-black;
-}
-
-/* footer  */
-footer {
-  @apply p-6 bg-black text-white;
-}
-
-.footer-content {
-  @apply text-sm text-center;
 }
 
 /* Section Specific */
@@ -315,7 +302,7 @@ footer {
   .section-content-flex,
   #contact .section-content,
   #home {
-    @apply w-1/2 mx-auto;
+    @apply w-2/3 mx-auto;
   }
 }
 
@@ -338,4 +325,41 @@ footer {
 
 .home-content h2 {
   @apply leading-normal font-light mb-6;
+}
+
+@screen md {
+  .home-content h1 {
+    @apply text-3xl;
+  }
+
+  .home-content h2 {
+    @apply text-2xl mb-8;
+  }
+}
+
+/* footer  */
+footer {
+  @apply p-6 bg-black text-white;
+}
+
+.footer-content {
+  @apply text-sm text-center;
+}
+
+.icon-container {
+  @apply mb-6;
+}
+
+.icon-container i {
+  @apply text-2xl px-4;
+}
+
+@screen md {
+  .footer-content {
+    @apply flex justify-between items-center;
+  }
+
+  .icon-container {
+    @apply mb-0;
+  }
 }
