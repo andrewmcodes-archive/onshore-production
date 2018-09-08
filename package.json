@@ -6,7 +6,6 @@
     "build:dev": "cross-env NODE_ENV=development webpack"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.3.1",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "favicons-webpack-plugin": "^0.0.9",

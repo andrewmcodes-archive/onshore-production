@@ -62,7 +62,12 @@ a:hover {
 .nav-btn {
   @apply flex items-center px-3 py-2 rounded text-white border border-white;
 }
-
+.nav-btn:hover {
+  @apply bg-white text-black;
+}
+.nav-btn:focus {
+  @apply bg-white text-black;
+}
 .hamburger-menu {
   @apply fill-current h-3 w-3;
 }
@@ -234,9 +239,12 @@ h2 {
 .section-item {
   @apply mb-4;
 }
+#recent-work .section-item {
+  @apply mb-4 bg-grey-darkest;
+}
 
 .section-item-content {
-  @apply mt-2 text-center text-white;
+  @apply text-center text-white py-4 font-bold;
 }
 
 /* Testimonial */
