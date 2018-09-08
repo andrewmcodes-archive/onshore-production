@@ -11,6 +11,7 @@
 }
 
 /* Font */
+
 .font-primary {
   font-family: 'Muli', sans-serif;
 }
@@ -28,6 +29,7 @@ a:hover {
 }
 
 /* buttons */
+
 .btn {
   @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white;
 }
@@ -47,6 +49,7 @@ a:hover {
 }
 
 /* Nav */
+
 .nav {
   @apply bg-black w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
 }
@@ -62,12 +65,15 @@ a:hover {
 .nav-btn {
   @apply flex items-center px-3 py-2 rounded text-white border border-white;
 }
+
 .nav-btn:hover {
   @apply bg-white text-black;
 }
+
 .nav-btn:focus {
   @apply bg-white text-black;
 }
+
 .hamburger-menu {
   @apply fill-current h-3 w-3;
 }
@@ -110,23 +116,18 @@ nav .icon-container {
   .nav-link {
     @apply mr-8 text-sm font-light mt-2 align-baseline;
   }
-
   .nav {
     @apply h-16;
   }
-
   .nav-link-container:last-child {
     @apply pr-0 mb-1;
   }
-
   .nav-link:last-child {
     @apply mr-0;
   }
-
   .nav-content-container {
     @apply h-16;
   }
-
   .nav-container {
     @apply h-16;
     min-height: 2rem;
@@ -141,23 +142,18 @@ nav .icon-container {
   .hider {
     @apply hidden;
   }
-
   .nav-link {
     @apply inline-block mt-0;
   }
-
   .nav-cta-container {
     @apply content-end;
   }
-
   .nav-cta {
     @apply mt-0;
   }
-
   .nav-content-container {
     @apply block flex items-center w-auto;
   }
-
   .nav-link-container {
     @apply flex-grow;
   }
@@ -187,7 +183,6 @@ h2 {
   .section-btn {
     @apply flex-row;
   }
-
   .section-btn p {
     @apply mb-0 pr-6;
   }
@@ -239,6 +234,7 @@ h2 {
 .section-item {
   @apply mb-4;
 }
+
 #recent-work .section-item {
   @apply mb-4 bg-grey-darkest;
 }
@@ -248,6 +244,7 @@ h2 {
 }
 
 /* Testimonial */
+
 .testimonial-author {
   @apply font-bold mt-4;
 }
@@ -257,6 +254,7 @@ h2 {
 }
 
 /* contact */
+
 form {
   @apply w-full px-6 mt-2 z-10 relative;
 }
@@ -275,6 +273,7 @@ textarea {
 }
 
 /* Section Specific */
+
 #recent-work,
 #about,
 #solutions {
@@ -295,7 +294,6 @@ textarea {
 }
 
 @screen md {
-
   .section-header,
   .section-content-flex,
   #contact .section-content,
@@ -305,7 +303,6 @@ textarea {
 }
 
 @screen lg {
-
   .section-header,
   .section-content-flex,
   #contact .section-content,
@@ -339,13 +336,13 @@ textarea {
   .home-content h1 {
     @apply text-3xl;
   }
-
   .home-content h2 {
     @apply text-2xl mb-8;
   }
 }
 
 /* footer  */
+
 footer {
   @apply p-6 bg-black text-white;
 }
@@ -366,7 +363,6 @@ footer {
   .footer-content {
     @apply flex justify-between items-center;
   }
-
   .icon-container {
     @apply mb-0;
   }
