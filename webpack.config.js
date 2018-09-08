@@ -40,13 +40,18 @@ module.exports = {
         ]
       },
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
         test: /\.(png|svg|jpg|gif|ico)$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: "./images/[name].[ext]",
-            disable: true,
-          }
+            name: "./images/[name].[ext]"          }
         }
       },
       {

@@ -1,20 +1,24 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
 :root {
   font-size: 16px;
 }
 
-
 .bg-primary {
   background-color: #106AF1;
 }
+
 .bg-os-blue {
   background-color: #106AF1;
 }
+
 .text-os-blue {
   color: #106AF1;
 }
+
 /* Font */
 
 .font-primary {
@@ -223,6 +227,7 @@ h2 {
   grid-gap: 24px;
   @apply px-6 text-grey-dark mt-2;
 }
+
 #solutions .section-content-grid p:hover {
   @apply text-os-blue;
 }
@@ -271,6 +276,7 @@ h2 {
 .testimonial-author {
   @apply text-grey-darkest font-bold mt-4;
 }
+
 .testimonial-title {
   @apply mt-1;
 }
@@ -297,6 +303,7 @@ textarea {
 #contact .btn {
   @apply w-full mb-4 bg-black;
 }
+
 #contact .btn:hover {
   @apply bg-os-blue;
 }

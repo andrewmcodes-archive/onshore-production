@@ -6,6 +6,10 @@
     "build:dev": "cross-env NODE_ENV=development webpack"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-core": "^7.0.0-0",
+    "babel-loader": "^8.0.2",
+    "babel-preset-env": "^1.7.0",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "favicons-webpack-plugin": "^0.0.9",
