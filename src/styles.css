@@ -88,7 +88,7 @@ a:hover {
 }
 
 .nav-container {
-  @apply flex justify-center text-center min-h-screen mt-8;
+  @apply flex justify-center text-center min-h-screen mt-2;
 }
 
 .nav-content-container {
@@ -138,7 +138,7 @@ nav .icon-container {
     @apply h-16;
   }
   .nav-container {
-    @apply h-16;
+    @apply h-16 mt-8;
     min-height: 2rem;
   }
 }
