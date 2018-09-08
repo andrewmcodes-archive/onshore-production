@@ -1,8 +1,10 @@
 import './styles.css';
 import './index.html';
-import './images/ideas.svg';
 import './images/onshore-logo.svg';
-import './images/profile-picture.jpg';
+import './images/stapleton.jpg';
+import './images/jessi.jpg';
+import './images/spencer.jpg';
+import './images/uncw-logo.jpg';
 import './images/profile-picture.jpg';
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -285,61 +285,10 @@ footer {
   @apply mb-0;
 }
 
-.home-content {}
-
 .home-content h1 {
   @apply text-xl;
 }
 
 .home-content h2 {
   @apply leading-normal font-light mb-6;
-}
-
-.color-container {
-  margin-top: 20vh;
-  background: linear-gradient(90deg, #00c6fb, #005bea 200%);
-  width: 100%;
-  height: 50vh;
-  transform:
-    skewY(-12deg);
-  position: absolute;
-  z-index: 0;
-}
-
-.rect1 {
-  margin: 0;
-  width: 30vw;
-  background: white;
-  opacity: 0.1;
-  height: 5vh;
-  float: left;
-}
-
-.rect2 {
-  margin: 0;
-  width: 20vw;
-  background: white;
-  opacity: 0.2;
-  height: 5vh;
-  float: left;
-  clear: left;
-}
-
-.rect3 {
-  margin: ;
-  width: 20vw;
-  background: white;
-  opacity: 0.5;
-  height: 5vh;
-  float: right;
-}
-
-.rect4 {
-  margin: 0;
-  width: 30vw;
-  background: white;
-  opacity: 0.1;
-  height: 5vh;
-  float: right;
-  clear: right;
 }
