@@ -7,7 +7,7 @@
 }
 
 .bg-primary {
-  background: linear-gradient(90deg, #00c6fb, #005bea 200%);
+  @apply bg-grey-darkest;
 }
 
 /* Font */
@@ -32,7 +32,7 @@
 
 /* Nav */
 .nav {
-  @apply bg-primary w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
+  @apply bg-black w-full flex items-center justify-between flex-wrap py-4 px-6 z-50 fixed shadow-lg;
 }
 
 .nav-brand-container {
@@ -133,19 +133,19 @@
     @apply flex-grow;
   }
 }
-
 section {
   @apply relative z-10;
 }
-
 a {
   @apply border-b-2 border-black no-underline;
 }
 
 a:hover {
-  @apply text-black;
+  @apply text-black border-b-2 border-blue;
 }
-
+.nav a:hover {
+  @apply text-white border-b-2 border-blue;
+}
 section {
   @apply w-full py-8;
 }
@@ -159,7 +159,7 @@ h2 {
 }
 
 .section-subtitle {
-  @apply text-lg text-grey-lightest leading-normal;
+  @apply text-lg text-grey-dark leading-normal;
 }
 
 .section-content {
@@ -241,7 +241,7 @@ footer {
 #recent-work,
 #about,
 #solutions {
-  @apply bg-primary text-white;
+  @apply bg-black text-white;
 }
 
 #solutions .section-content,
@@ -254,12 +254,11 @@ footer {
 }
 
 #home {
-  @apply px-6 min-h-screen flex flex-col justify-center text-white;
+  @apply px-6 min-h-screen flex flex-col justify-center text-black;
 }
 
 #home a {
-  @apply text-white;
-
+  @apply text-black;
 }
 
 @screen md {
@@ -284,6 +283,7 @@ footer {
 .logo-header h1 {
   @apply mb-0;
 }
+
 
 .home-content h1 {
   @apply text-xl;
