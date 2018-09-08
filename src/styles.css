@@ -68,7 +68,7 @@
 }
 
 .nav-link-container {
-  @apply text-sm text-right w-full px-6 text-2xl;
+  @apply text-sm text-center px-6 text-2xl;
 }
 
 .nav-link {
@@ -157,7 +157,12 @@ h1 {
 h2 {
   @apply text-base mb-2;
 }
-
+.section-btn {
+  @apply px-6 text-sm flex flex-col content-center;
+}
+.section-btn a {
+  @apply text-left w-1/4 mt-4;
+}
 .section-subtitle {
   @apply text-lg text-grey-dark leading-normal;
 }
@@ -172,7 +177,7 @@ h2 {
 
 .section-content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 14px;
   @apply px-6 text-grey-darkest;
 }
