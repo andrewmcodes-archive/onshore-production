@@ -19,6 +19,10 @@
   color: #106AF1;
 }
 
+.border-os-blue {
+  border-color: #106AF1;
+}
+
 /* Font */
 
 .font-primary {
@@ -96,7 +100,7 @@ a:hover {
 }
 
 nav .icon-container {
-  @apply mt-8;
+  @apply mt-12 bg-os-blue rounded p-4;
 }
 
 .nav-cta {
@@ -135,7 +139,7 @@ nav .icon-container {
     @apply mr-0;
   }
   .nav-content-container {
-    @apply h-16;
+    @apply min-h-screen;
   }
   .nav-container {
     @apply h-16 mt-8;
