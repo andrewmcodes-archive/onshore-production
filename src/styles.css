@@ -23,6 +23,9 @@
   border-color: #106AF1;
 }
 
+.gradient {
+background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
 /* Font */
 
 .font-primary {
@@ -44,7 +47,7 @@ a:hover {
 /* buttons */
 
 .btn {
-  @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white;
+  @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white bg-black border-none;
 }
 
 .btn-alternate {
@@ -52,13 +55,15 @@ a:hover {
 }
 
 .btn:hover {
-  @apply shadow-lg;
+  @apply shadow-lg text-white bg-os-blue;
   transition-timing-function: linear;
   transition-duration: 200ms;
 }
 
 .btn-alternate:hover {
-  @apply shadow-lg text-white bg-os-blue;
+  @apply shadow-lg text-black bg-white;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }
 
 /* Nav */
@@ -330,7 +335,7 @@ textarea {
 }
 
 #home {
-  @apply px-6 min-h-screen flex flex-col justify-center text-black;
+  @apply px-6 min-h-screen flex flex-col justify-center text-white;
 }
 
 @screen md {
