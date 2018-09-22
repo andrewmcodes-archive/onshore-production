@@ -131,12 +131,12 @@ nav .icon-container {
 }
 
 @screen md {
-  .nav-link {
+  /* .nav-link {
     @apply mr-8 text-sm font-normal mt-2 align-baseline;
-  }
-  .nav {
+  } */
+  /* .nav {
     @apply h-16;
-  }
+  } */
   .nav-link-container:last-child {
     @apply pr-0 mb-1;
   }
