@@ -6,6 +6,10 @@
 :root {
   font-size: 16px;
 }
+.bg-image {
+  background-image: url("./images/code.png");
+  background-size: cover;
+}
 
 .bg-primary {
   background-color: #106AF1;
@@ -131,24 +135,18 @@ nav .icon-container {
 }
 
 @screen md {
-  /* .nav-link {
-    @apply mr-8 text-sm font-normal mt-2 align-baseline;
-  } */
-  /* .nav {
-    @apply h-16;
-  } */
+  .nav-link {
+    @apply pr-6;
+  }
   .nav-link-container:last-child {
     @apply pr-0 mb-1;
   }
   .nav-link:last-child {
     @apply mr-0;
   }
-  .nav-content-container {
-    @apply min-h-screen;
-  }
+
   .nav-container {
-    @apply h-16 mt-8;
-    min-height: 2rem;
+    min-height: 100vh;
   }
 }
 
@@ -157,11 +155,14 @@ nav .icon-container {
 }
 
 @screen lg {
+    .nav-container {
+    min-height: .25em;
+  }
   .hider {
     @apply hidden;
   }
   .nav-link {
-    @apply inline-block mt-0;
+    @apply inline-block mt-0 pr-8 text-base;
   }
   .nav-cta-container {
     @apply content-end;
@@ -199,16 +200,16 @@ h2 {
 
 @screen md {
   .section-btn {
-    @apply flex-row justify-between text-xl w-2/3 mx-auto;
+    @apply flex-row justify-between text-xl w-3/4 mx-auto;
   }
   .section-btn p {
     @apply mb-0 mr-8;
   }
 }
 
-@screen md {
+@screen lg {
   .section-btn {
-    @apply w-1/2;
+    @apply w-2/3;
   }
 }
 
@@ -357,7 +358,7 @@ textarea {
 }
 
 .logo-header {
-  @apply flex items-center content-center mb-4;
+  @apply flex items-center content-center mb-4 opacity-100;
 }
 
 .logo-header img {
