@@ -6,8 +6,9 @@
 :root {
   font-size: 16px;
 }
+
 .bg-image {
-  background-image: url("./images/code.png");
+  background-image: url("./images/beach.png");
   background-size: cover;
 }
 
@@ -28,8 +29,9 @@
 }
 
 .gradient {
-background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
+
 /* Font */
 
 .font-primary {
@@ -138,9 +140,11 @@ nav .icon-container {
   .nav-link {
     @apply pr-6;
   }
+
   .nav-link-container:last-child {
     @apply pr-0 mb-1;
   }
+
   .nav-link:last-child {
     @apply mr-0;
   }
@@ -155,24 +159,30 @@ nav .icon-container {
 }
 
 @screen lg {
-    .nav-container {
+  .nav-container {
     min-height: .25em;
   }
+
   .hider {
     @apply hidden;
   }
+
   .nav-link {
     @apply inline-block mt-0 pr-8 text-base;
   }
+
   .nav-cta-container {
     @apply content-end;
   }
+
   .nav-cta {
     @apply mt-0;
   }
+
   .nav-content-container {
     @apply block flex items-center w-auto;
   }
+
   .nav-link-container {
     @apply flex-grow;
   }
@@ -202,6 +212,7 @@ h2 {
   .section-btn {
     @apply flex-row justify-between text-xl w-3/4 mx-auto;
   }
+
   .section-btn p {
     @apply mb-0 mr-8;
   }
@@ -246,6 +257,7 @@ h2 {
   .section-content-grid {
     @apply px-0 w-3/4 mx-auto;
   }
+
   #solutions .section-content-grid {
     grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
   }
@@ -340,6 +352,7 @@ textarea {
 }
 
 @screen md {
+
   .section-header,
   .section-content-flex,
   #contact .section-content,
@@ -349,6 +362,7 @@ textarea {
 }
 
 @screen lg {
+
   .section-header,
   .section-content-flex,
   #contact .section-content,
@@ -382,6 +396,7 @@ textarea {
   .home-content h1 {
     @apply text-3xl;
   }
+
   .home-content h2 {
     @apply text-2xl mb-8;
   }
@@ -409,6 +424,7 @@ footer {
   .footer-content {
     @apply flex justify-between items-center;
   }
+
   .icon-container {
     @apply mb-0;
   }

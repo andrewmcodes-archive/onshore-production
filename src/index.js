@@ -33,7 +33,7 @@ function toggleMenu() {
 }
 
 let shiftWindow = function () {
-  scrollBy(0, -60)
+  scrollBy(0, -80)
 };
 window.addEventListener("hashchange", shiftWindow);
 
