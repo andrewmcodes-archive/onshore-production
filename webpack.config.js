@@ -6,7 +6,6 @@ const glob = require("glob-all");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-
 const isDev = process.env.NODE_ENV === "development";
 
 class TailwindExtractor {
@@ -23,6 +22,7 @@ module.exports = {
   mode: process.env.NODE_ENV,
   entry: "./src/index.js",
   output: {
+    filename: 'bundle.js',
     path: path.resolve(__dirname, "build")
   },
   module: {
@@ -40,12 +40,18 @@ module.exports = {
         ]
       },
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
         test: /\.(png|svg|jpg|gif|ico)$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: "./images/[name].[ext]",
-          }
+            name: "./images/[name].[ext]"          }
         }
       },
       {
@@ -68,7 +74,7 @@ module.exports = {
   },
   plugins: [
     new FaviconsWebpackPlugin({
-      logo: './src/images/onshore-logo.svg',
+      logo: './src/images/onshore_logo.svg',
       inject: true,
       icons: {
         android: true,
@@ -97,7 +103,12 @@ module.exports = {
       }]
     }),
     new HtmlWebpackPlugin({
+      filename: "index.html",
       template: "./src/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "./src/contact.html"
     })
   ]
 };
