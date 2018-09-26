@@ -351,6 +351,10 @@ textarea {
   @apply px-6 min-h-screen flex flex-col justify-center text-white;
 }
 
+#home h2 {
+  max-width: 480px;
+}
+
 @screen md {
 
   .section-header,
@@ -358,6 +362,10 @@ textarea {
   #contact .section-content,
   #home {
     @apply w-3/4 mx-auto;
+  }
+
+  #home h2 {
+  max-width: 640px;
   }
 }
 
