@@ -7,6 +7,15 @@
   font-size: 16px;
 }
 
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
 .bg-image {
   background-image: url("https://res.cloudinary.com/onshore-studios/image/upload/v1537995866/onshore/beach.png");
   background-size: cover;
