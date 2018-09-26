@@ -1,13 +1,12 @@
 import './styles.css';
 import './index.html';
-import './images/onshore_logo.svg';
-import './images/stapleton.jpg';
-import './images/jessi.jpg';
-import './images/spencer.jpg';
-import './images/uncw_logo.jpg';
-import './images/profile_picture.jpg';
 import 'animate.css';
+import cloudinary from 'cloudinary-core';
+
 const $ = require('jquery');
+
+const cl = new cloudinary.Cloudinary({cloud_name: "onshore-studios", secure: true});
+cl.responsive()
 
 document.addEventListener("DOMContentLoaded", function () {
   let menu = document.getElementById("js-nav-menu")

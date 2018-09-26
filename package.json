@@ -32,5 +32,8 @@
     "webpack": "^4.17.0",
     "webpack-command": "^0.4.1",
     "webpack-serve": "^2.0.2"
+  },
+  "dependencies": {
+    "cloudinary-core": "^2.5.0"
   }
 }
