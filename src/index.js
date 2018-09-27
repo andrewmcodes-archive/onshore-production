@@ -1,5 +1,6 @@
 import './styles.css';
 import './index.html';
+import './contact.html';
 import 'animate.css';
 import cloudinary from 'cloudinary-core';
 
