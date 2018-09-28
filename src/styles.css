@@ -360,7 +360,7 @@ textarea {
 }
 
 #about .section-header {
-  @apply pr-0 w-1/2;
+  @apply pr-0 w-4/5;
 }
 
 .offscreen-img-container {
@@ -368,14 +368,21 @@ textarea {
 }
 
 .offscreen-img {
-  @apply w-1/2 overflow-hidden;
+  @apply w-1/5 overflow-hidden;
   min-height: 640px;
   background-image: url("https://res.cloudinary.com/onshore-studios/image/upload/q_auto/v1538126471/macbook_2x.png");
   object-fit: cover;
   background-position: left top;
   background-repeat: no-repeat;
 }
-
+@screen sm {
+  .offscreen-img {
+    @apply w-1/2;
+  }
+  #about .section-header {
+    @apply w-1/2;
+  }
+}
 @screen md {
     #about .offscreen-img-container {
     @apply w-full ml-auto -mt-8;
