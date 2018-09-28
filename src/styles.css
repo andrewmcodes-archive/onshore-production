@@ -355,7 +355,9 @@ textarea {
 #recent-work {
   @apply bg-white;
 }
-#about,
+#about {
+  @apply bg-black text-white;
+}
 #solutions {
   @apply bg-black text-white;
 }
