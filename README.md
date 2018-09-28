@@ -1,4 +1,8 @@
 # Onshore Studios Production Website
+[![Build Status](https://travis-ci.org/andrewmcodes/onshore-production.svg?branch=master)](https://travis-ci.org/andrewmcodes/onshore-production)
+![Tailwind Version](https://img.shields.io/badge/TailwindCSS-0.6.6-orange.svg)
+![Webpack Version](https://img.shields.io/badge/Webpack-4.17.0-blue.svg)
+
 
 This is the official website of [Onshore Studios](https://onshorestudios.com).
 
