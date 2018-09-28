@@ -72,7 +72,7 @@
 </head>
 
 <body class="font-primary">
-  <nav class="nav" id="myNav">
+  <nav class="nav animated slideInDown delay-faster" id="myNav">
     <div class="nav-brand-container">
       <a rel="noopener" data-scroll href="#home" class="nav-brand">Onshore Studios</a>
     </div>
@@ -89,25 +89,25 @@
     <div class="hidden nav-content-container" id="js-nav-menu">
       <div class="nav-container">
         <div class="nav-link-container">
-          <a rel="noopener" data-scroll href="./index.html#home" class="js-menu-dismiss nav-link">
+          <a rel="noopener" data-scroll href="./index.html#home" class="js-menu-dismiss nav-link animated fadeInDown">
             Home
           </a>
-          <a rel="noopener" data-scroll href="./index.html#about" class="js-menu-dismiss nav-link">
+          <a rel="noopener" data-scroll href="./index.html#about" class="js-menu-dismiss nav-link animated fadeInDown">
             About
           </a>
-          <a rel="noopener" data-scroll href="./index.html#services" class="js-menu-dismiss nav-link">
+          <a rel="noopener" data-scroll href="./index.html#services" class="js-menu-dismiss nav-link animated fadeInDown">
             Services
           </a>
-          <a rel="noopener" data-scroll href="./index.html#solutions" class="js-menu-dismiss nav-link">
+          <a rel="noopener" data-scroll href="./index.html#solutions" class="js-menu-dismiss nav-link animated fadeInDown">
             Solutions
           </a>
-          <a rel="noopener" data-scroll href="./index.html#recent-work" class="js-menu-dismiss nav-link">
+          <a rel="noopener" data-scroll href="./index.html#recent-work" class="js-menu-dismiss nav-link animated fadeInDown">
             Recent Work
           </a>
-          <a rel="noopener" data-scroll href="./contact.html" class="js-menu-dismiss nav-link">
+          <a rel="noopener" data-scroll href="./contact.html" class="js-menu-dismiss nav-link animated fadeInDown">
             Contact
           </a>
-          <div id="nav-icon-container" class="icon-container hidden lg:hidden">
+          <div id="nav-icon-container" class="icon-container hidden lg:hidden animated fadeInUp">
             <a rel="noopener" href="https://www.instagram.com/onshorestudios/" title="Instagram" class="no-underline text-white"
               target="_blank">
               <i class="icon fab fa-instagram"></i>
@@ -130,15 +130,18 @@
     </div>
   </nav>
   <div class="js-menu-dismiss pt-12 z-10 bg-grey-lighter w-full">
-    <section id="contact" class="min-h-screen">
-      <div class="section-header">
+    <section id="contact" class="min-h-screen w-1/2 mx-auto">
+      <div class="section-header mt-4">
         <h1 class="animated fadeInUp">Contact Us</h1>
         <p class="section-subtitle">
           We are currently open for new projects
         </p>
       </div>
       <div class="section-content">
-        <form method="POST" netlify-recaptcha netlify action="index.html">
+        <form method="POST" netlify-honeypot="bot-field" netlify action="/index.html">
+          <div class="form-block hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </div>
           <div class="form-block">
             <input type="text" class="" name="name" id="name" placeholder="Your Name">
           </div>
@@ -177,11 +180,10 @@
             <i class="icon fab fa-dribbble"></i>
           </a>
         </div>
-        <p>All content © Onshore Studios 2018</p>
+        <p class="pb-2">All content © Onshore Studios 2018 <br /> <br /> Wilmington, NC</p>
       </div>
     </footer>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 
 </html>
