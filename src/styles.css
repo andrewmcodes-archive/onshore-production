@@ -61,7 +61,7 @@ a:hover {
 }
 
 .btn-alternate {
-  @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white bg-black border-none;
+  @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-black bg-white border-none;
 }
 
 .btn:hover {
@@ -204,6 +204,9 @@ h2 {
   @apply text-base mb-2;
 }
 
+#cta {
+  @apply bg-os-blue text-white;
+}
 .section-btn {
   @apply px-6 text-base flex flex-col items-center justify-center;
 }
@@ -248,9 +251,15 @@ h2 {
 }
 
 #solutions .section-content-grid {
-  @apply p-6 text-white bg-os-blue mt-2 shadow-lg mx-6 text-center;
+  grid-template-columns: 1fr 1fr;
+  @apply text-white mt-2 mx-6 text-center;
 }
-
+#solutions .section-content-grid p {
+  @apply bg-grey-darkest p-4 rounded shadow-inner ;
+}
+#recent-work .section-item {
+  @apply shadow-inner;
+}
 @screen md {
   .section-content-grid {
     @apply mx-auto w-full;
@@ -343,7 +352,9 @@ textarea {
 
 /* Section Specific */
 
-#recent-work,
+#recent-work {
+  @apply bg-white;
+}
 #about,
 #solutions {
   @apply bg-black text-white;
