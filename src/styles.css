@@ -242,35 +242,42 @@ h2 {
 
 .section-content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 14px;
   @apply px-6 text-grey-dark;
 }
 
 #solutions .section-content-grid {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 24px;
-  @apply px-6 text-grey-dark mt-2;
-}
-
-#solutions .section-content-grid p:hover {
-  @apply text-os-blue;
+  @apply p-6 text-white bg-os-blue mt-2 shadow-lg mx-6 text-center;
 }
 
 @screen md {
   .section-content-grid {
-    @apply px-0 w-3/4 mx-auto;
+    @apply mx-auto w-full;
+    grid-template-columns: 1fr 1fr;
+  }
+  #solutions .section-content-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    @apply mx-auto w-3/4;
+  }
+  .section-content-grid .section-item {
+    @apply mx-auto;
   }
 
-  #solutions .section-content-grid {
-    grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
-  }
 }
 
 @screen lg {
   .section-content-grid {
-    @apply w-2/3;
+    @apply mx-auto w-full;
   }
+  #solutions .section-content-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @apply mx-auto w-2/3;
+  }
+}
+
+@screen xl {
+
 }
 
 .section-content-flex {
@@ -290,11 +297,11 @@ h2 {
 }
 
 #recent-work .section-item {
-  @apply mb-4 bg-os-blue;
+  @apply mb-4;
 }
 
 .section-item-content {
-  @apply text-center text-white py-4 font-bold;
+  @apply text-center text-white py-4;
 }
 
 /* Testimonial */
