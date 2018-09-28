@@ -25,6 +25,10 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, "build")
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'src'),
+    port: 9000
+  },
   module: {
     rules: [{
         test: /\.p?css$/,
@@ -45,6 +49,15 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.(png|svg|jpg|gif|ico)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: "./images/[name].[ext]"
+          }
         }
       },
       {
