@@ -59,7 +59,12 @@ a:hover {
 .btn {
   @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-white bg-black border-none;
 }
-
+#recent-work .btn-wrapper {
+  @apply w-full pt-4 pb-2;
+}
+#recent-work .btn, #contact .btn {
+  @apply w-1/2 mx-auto;
+}
 .btn-alternate {
   @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal text-black bg-white border-none;
 }
@@ -217,7 +222,7 @@ h2 {
 
 @screen md {
   .section-btn {
-    @apply flex-row justify-between text-xl w-3/4 mx-auto;
+    @apply flex-row text-xl w-3/4 mx-auto;
   }
 
   .section-btn p {
@@ -246,13 +251,13 @@ h2 {
 .section-content-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 14px;
+  grid-gap: 8px;
   @apply px-6 text-grey-dark;
 }
 
 #solutions .section-content-grid {
   grid-template-columns: 1fr 1fr;
-  @apply text-white mt-2 mx-6 text-center;
+  @apply text-white mt-2 text-center;
 }
 #solutions .section-content-grid p {
   @apply bg-grey-darkest p-4 rounded shadow-inner ;
@@ -292,6 +297,9 @@ h2 {
 .section-content-flex {
   @apply flex flex-col px-6;
 }
+.section-content-flex-row {
+  @apply flex flex-row px-6 justify-center;
+}
 
 .section-content-flex .section-item {
   @apply mb-6 leading-normal;
@@ -327,6 +335,10 @@ h2 {
   @apply h-24 w-24 mx-auto mb-4 bg-grey-lightest rounded-full block overflow-hidden;
 }
 
+.lg-circle {
+   @apply h-48 w-48 mx-auto mb-4 bg-grey-lightest rounded-full block overflow-hidden;
+}
+
 /* contact */
 
 form {
@@ -343,7 +355,7 @@ textarea {
 }
 
 #contact .btn {
-  @apply w-full mb-4 bg-black;
+  @apply w-1/2 mx-auto mb-4 bg-black;
 }
 
 #contact .btn:hover {
@@ -351,7 +363,52 @@ textarea {
 }
 
 /* Section Specific */
-
+#team {
+  @apply bg-black;
+}
+.team-block {
+  @apply bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden mb-4;
+}
+.team-img-wrapper {
+  @apply px-6 py-4
+}
+.team-img {
+  @apply block h-16 rounded-full mx-auto mb-4;
+}
+.team-content-wrapper {
+  @apply text-center;
+}
+.team-name {
+  @apply text-xl font-bold;
+}
+.team-title {
+  @apply text-sm text-grey-dark;
+}
+.team-social-block {
+  @apply align-bottom;
+}
+@screen sm {
+  .team-img-wrapper {
+    @apply flex items-center;
+  }
+  .team-img {
+    @apply h-24 mb-0 mr-4 ml-0;
+  }
+  .team-content-wrapper {
+    @apply text-left flex-grow;
+  }
+  #team .section-content-flex {
+    @apply w-full flex-col;
+  }
+}
+@screen md {
+  #team .section-content-flex {
+    @apply flex-row w-full justify-center mx-auto;
+  }
+  .team-block {
+    @apply mx-auto;
+  }
+}
 #recent-work {
   @apply bg-white;
 }
@@ -360,7 +417,7 @@ textarea {
 }
 
 #about .section-header {
-  @apply pr-0 w-4/5;
+  @apply w-full;
 }
 
 .offscreen-img-container {
@@ -368,7 +425,7 @@ textarea {
 }
 
 .offscreen-img {
-  @apply w-1/5 overflow-hidden;
+  @apply hidden overflow-hidden;
   min-height: 640px;
   background-image: url("https://res.cloudinary.com/onshore-studios/image/upload/q_auto/v1538126471/macbook_2x.png");
   object-fit: cover;
@@ -377,10 +434,10 @@ textarea {
 }
 @screen sm {
   .offscreen-img {
-    @apply w-1/2;
+    @apply block w-1/2;
   }
   #about .section-header {
-    @apply w-1/2;
+    @apply w-1/2 pr-0;
   }
 }
 @screen md {
@@ -388,7 +445,7 @@ textarea {
     @apply w-full ml-auto -mt-8;
   }
   #about .section-header {
-    @apply pl-8 pr-8;
+    @apply pl-8 pr-2;
   }
   .offscreen-img {
     @apply w-1/3;
@@ -401,7 +458,7 @@ textarea {
     width: 84%;
   }
   #about .section-header {
-    @apply pr-4 w-1/2;
+    @apply pl-0 pr-2 w-1/2;
     max-width: 640px;
   }
     .offscreen-img {
