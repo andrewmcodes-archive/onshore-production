@@ -7,6 +7,10 @@
   font-size: 16px;
 }
 
+body {
+  @apply bg-black;
+}
+
 .bg-image {
   background-image: url("https://res.cloudinary.com/onshore-studios/image/upload/q_auto/v1537995866/onshore/beach.png");
   background-size: cover;
@@ -348,7 +352,8 @@ textarea {
 }
 
 #home {
-  @apply px-6 min-h-screen flex flex-col justify-center text-white;
+  @apply px-6 flex flex-col justify-center text-white;
+  min-height: 86vh;
 }
 
 #home h2 {
