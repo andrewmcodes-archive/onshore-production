@@ -1,65 +1,22 @@
-# Onshore Studios Production Website
-[![Build Status](https://travis-ci.org/andrewmcodes/onshore-production.svg?branch=master)](https://travis-ci.org/andrewmcodes/onshore-production)
-![Tailwind Version](https://img.shields.io/badge/TailwindCSS-0.6.6-orange.svg)
-![Webpack Version](https://img.shields.io/badge/Webpack-4.17.0-blue.svg)
+# onshore-studios
 
+> Onshore Studios Production Website
 
-This is the official website of [Onshore Studios](https://onshorestudios.com).
+## Build Setup
 
-To get started, clone the project and install the dependencies:
+``` bash
+# install dependencies
+$ yarn install
 
-## NPM and Yarn
+# serve with hot reload at localhost:3000
+$ yarn run dev
 
-Install the dependencies
+# build for production and launch server
+$ yarn run build
+$ yarn start
 
-```bash
-# NPM
-npm install
-
-# Yarn
-yarn
+# generate static project
+$ yarn run generate
 ```
 
-To build for development
-
-```bash
-# NPM
-npm build:dev
-
-#Yarn
-yarn build:dev
-```
-
-To build for production
-
-```bash
-# NPM
-npm build
-
-# Yarn
-yarn build
-```
-
-To watch for changes
-
-```bash
-# NPM
-npm run start
-
-# Yarn
-yarn start
-```
-
-## Contributing
-
-1. Fork the repo on GitHub
-2. Clone the project to your own machine
-3. Commit changes to your own branch
-4. Push your work back up to your fork
-5. Submit a Pull request so that we can review your changes
-
-NOTE: Be sure to merge the latest from "upstream" before making a pull request!
-
-## Issues
-
-Feel free to submit issues and enhancement requests!
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
