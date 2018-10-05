@@ -5,7 +5,7 @@
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     action=""
-    @submit.prevent="handleSubmit"
+    @submit.prevent="submit"
   >
     <input
       type="hidden"
@@ -79,7 +79,7 @@ export default {
         )
         .join('&')
     },
-    handleSubmit() {
+    submit() {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
