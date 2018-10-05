@@ -5,7 +5,6 @@
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     action=""
-    @submit.prevent="submit"
   >
     <input
       type="hidden"
@@ -42,10 +41,10 @@
       />
     </div>
     <div class="form-block">
-      <input
+      <button
         type="submit"
-        value="Send"
-      >
+        @click.prevent="handleSubmit"
+      >Send</button>
     </div>
   </form>
 </template>
