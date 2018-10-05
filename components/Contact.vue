@@ -61,6 +61,7 @@ textarea {
 
 <script>
 export default {
+  name: 'Contact',
   data() {
     return {
       form: {
