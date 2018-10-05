@@ -50,7 +50,7 @@
   </form>
 </template>
 
-<style lang="scss">
+<style lang="css">
 form {
   @apply w-full px-6 mt-2 z-10 relative text-grey-darkest;
 }
