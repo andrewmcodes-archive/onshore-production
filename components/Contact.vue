@@ -26,7 +26,7 @@
     <div class="form-block">
       <input
         id="email"
-        v-model="email.value"
+        v-model="email"
         type="email"
         name="email"
         placeholder="Your email address"
@@ -35,7 +35,7 @@
     <div class="form-block">
       <textarea
         id="message"
-        v-model="message.text"
+        v-model="message"
         name="message"
         placeholder="Please leave a short summary of the project you would like us to help with"
       />
