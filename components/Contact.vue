@@ -4,20 +4,20 @@
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    netlify
+    action=""
+    @submit.prevent="submit"
   >
     <input
       type="hidden"
       name="form-name"
       value="contact"
-      action="/"
     >
-    <input
-      type="hidden"
-      name="bot-field"
-    >
+    <p class="hidden">
+      <label>Don’t fill this out: <input name="bot-field"></label>
+    </p>
     <div class="form-block">
       <input
+        id="name"
         v-model="form.name"
         type="text"
         name="name"
@@ -26,6 +26,7 @@
     </div>
     <div class="form-block">
       <input
+        id="email"
         v-model="form.email"
         type="email"
         name="email"
@@ -34,16 +35,14 @@
     </div>
     <div class="form-block">
       <textarea
+        id="message"
         v-model="form.message"
         name="message"
         placeholder="Please leave a short summary of the project you would like us to help with"
       />
     </div>
     <div class="form-block">
-      <button
-        type="submit"
-        @click.prevent="handleSubmit"
-      >Send</button>
+      <button type="submit">Send</button>
     </div>
   </form>
 </template>
