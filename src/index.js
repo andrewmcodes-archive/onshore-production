@@ -62,3 +62,13 @@ $(document).ready(function() {
     });
   });
 });
+
+$("#contact-form").submit(function (e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function () {
+    document.getElementById("contact-form").reset();
+    alert("Thank you! We will be in touch shortly.");
+  });
+});
