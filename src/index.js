@@ -69,6 +69,6 @@ $("#contact-form").submit(function (e) {
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function () {
     document.getElementById("contact-form").reset();
-    alert("Thank you!");
+    alert("Thank you! We will be in touch shortly.");
   });
 });
