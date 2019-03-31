@@ -63,3 +63,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ## Issues
 
 Feel free to submit issues and enhancement requests!
+
+## License
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fandrewmcodes%2Fonshore-production.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fandrewmcodes%2Fonshore-production?ref=badge_large)
