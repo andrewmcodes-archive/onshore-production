@@ -14,7 +14,7 @@
     "babel-loader": "^8.0.2",
     "babel-preset-env": "^1.7.0",
     "cross-env": "^5.2.0",
-    "css-loader": "^1.0.0",
+    "css-loader": "^2.1.1",
     "favicons-webpack-plugin": "^0.0.9",
     "file-loader": "^2.0.0",
     "glob-all": "^3.1.0",
