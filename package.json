@@ -38,6 +38,6 @@
   "dependencies": {
     "autoprefixer": "^9.4.9",
     "cloudinary-core": "^2.5.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.6.0"
   }
 }
