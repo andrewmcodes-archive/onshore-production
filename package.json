@@ -27,7 +27,7 @@
     "postcss": "^7.0.17",
     "postcss-loader": "^3.0.0",
     "prettier": "1.16.4",
-    "purgecss-webpack-plugin": "^1.4.0",
+    "purgecss-webpack-plugin": "^1.5.0",
     "style-loader": "^1.0.0",
     "tailwindcss": "^0.7.4",
     "terser-webpack-plugin": "^1.4.1",
