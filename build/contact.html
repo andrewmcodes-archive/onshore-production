@@ -138,18 +138,19 @@
         </p>
       </div>
       <div class="section-content">
-        <form method="POST" netlify-honeypot="bot-field" netlify action="/index.html">
+        <form method="POST" netlify-honeypot="bot-field" netlify action="/index" id="contact-form">
           <div class="form-block hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </div>
           <div class="form-block">
-            <input type="text" class="" name="name" id="name" placeholder="Your Name">
+            <input type="text" class="" name="name" id="name" placeholder="Your Name" required>
           </div>
           <div class="form-block">
-            <input type="email" class="" name="email" id="email" placeholder="Your Email Address">
+            <input type="email" class="" name="email" id="email" placeholder="Your Email Address" required>
           </div>
           <div class="form-block">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please leave a short summary of the project you would like us to help with"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please leave a short summary of the project you would like us to help with"
+              required></textarea>
           </div>
           <div class="form-block text-center">
             <button class="btn" type="submit">Send message</button>
