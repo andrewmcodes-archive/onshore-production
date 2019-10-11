@@ -33,7 +33,7 @@
     "terser-webpack-plugin": "^1.4.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.6",
-    "webpack-command": "^0.4.2"
+    "webpack-command": "^0.5.0"
   },
   "dependencies": {
     "autoprefixer": "^9.6.1",
