@@ -13,7 +13,7 @@
     "babel-core": "^7.0.0-0",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
-    "cross-env": "^5.2.0",
+    "cross-env": "^6.0.3",
     "css-loader": "^3.2.0",
     "favicons-webpack-plugin": "^0.0.9",
     "file-loader": "^4.2.0",
